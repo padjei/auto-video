@@ -1,0 +1,91 @@
+{
+  "image": {
+    "default": "openai",
+    "fallback": "local",
+    "providers": {
+      "openai": {
+        "enabled": true,
+        "adapter": "openai-image",
+        "env": [
+          "OPENAI_API_KEY"
+        ],
+        "model": "gpt-image-2"
+      },
+      "local": {
+        "enabled": true,
+        "adapter": "local-image"
+      }
+    }
+  },
+  "video": {
+    "default": "runway",
+    "fallback": "local",
+    "providers": {
+      "runway": {
+        "enabled": true,
+        "adapter": "runway-video",
+        "env": [
+          "RUNWAY_API_KEY"
+        ],
+        "model": "gen4.5"
+      },
+      "veo": {
+        "enabled": true,
+        "adapter": "veo-video",
+        "env": [
+          "GOOGLE_CLOUD_PROJECT",
+          "GOOGLE_CLOUD_STORAGE_URI"
+        ],
+        "model": "veo-3.1-fast-generate-001"
+      },
+      "local": {
+        "enabled": true,
+        "adapter": "local-video"
+      }
+    }
+  },
+  "voice": {
+    "default": "elevenlabs",
+    "fallback": "macos",
+    "providers": {
+      "elevenlabs": {
+        "enabled": true,
+        "adapter": "elevenlabs-voice",
+        "env": [
+          "ELEVENLABS_API_KEY"
+        ],
+        "model": "eleven_v3"
+      },
+      "openai": {
+        "enabled": true,
+        "adapter": "openai-voice",
+        "env": [
+          "OPENAI_API_KEY"
+        ],
+        "model": "gpt-4o-mini-tts"
+      },
+      "macos": {
+        "enabled": true,
+        "adapter": "macos-voice"
+      }
+    }
+  },
+  "music": {
+    "default": "elevenlabs",
+    "fallback": "none",
+    "providers": {
+      "elevenlabs": {
+        "enabled": true,
+        "adapter": "elevenlabs-music",
+        "env": [
+          "ELEVENLABS_API_KEY"
+        ],
+        "model": "music_v2"
+      },
+      "none": {
+        "enabled": true,
+        "adapter": "none"
+      }
+    }
+  }
+}

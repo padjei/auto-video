@@ -1,0 +1,51 @@
+{
+  "id": "v3-demo",
+  "title": "V3 Autonomous Studio",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "background": "#07111A",
+  "foreground": "#F7FAFC",
+  "accent": "#68D8FF",
+  "musicVolume": 0.1,
+  "voiceVolume": 1,
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "hero",
+      "durationInFrames": 180,
+      "eyebrow": "Autonomous Production",
+      "headline": "Modern technology moves fast.",
+      "body": "Your production system should too."
+    },
+    {
+      "id": "s2",
+      "type": "kineticType",
+      "durationInFrames": 180,
+      "eyebrow": "The challenge",
+      "headline": "Velocity without orchestration creates complexity."
+    },
+    {
+      "id": "s3",
+      "type": "diagram",
+      "durationInFrames": 180,
+      "headline": "Plan. Generate. Edit. Review.",
+      "body": "One controlled production loop.",
+      "mediaFit": "cover"
+    },
+    {
+      "id": "s4",
+      "type": "metric",
+      "durationInFrames": 180,
+      "metric": "V3",
+      "headline": "Real generative media. Deterministic editing."
+    },
+    {
+      "id": "s5",
+      "type": "cta",
+      "durationInFrames": 180,
+      "eyebrow": "Claude AI Video Studio",
+      "headline": "Build faster without giving up quality."
+    }
+  ]
+}

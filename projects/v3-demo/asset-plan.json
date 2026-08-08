@@ -1,0 +1,23 @@
+[
+  {
+    "id": "hero-systems",
+    "sceneId": "s1",
+    "type": "video",
+    "required": false,
+    "prompt": "Cinematic slow tracking shot through a sophisticated enterprise technology operations center, abstract data systems visible on glass displays, premium realistic lighting, restrained corporate aesthetic, no readable logos or text, smooth camera movement",
+    "durationSeconds": 5,
+    "aspectRatio": "16:9",
+    "providerPreference": "runway",
+    "fallback": "local animated grid"
+  },
+  {
+    "id": "architecture",
+    "sceneId": "s3",
+    "type": "image",
+    "required": false,
+    "prompt": "Premium abstract enterprise platform architecture visual, layered cloud systems and secure data pathways, dark navy environment, restrained cyan highlights, sophisticated editorial technology design, no text",
+    "aspectRatio": "16:9",
+    "providerPreference": "openai",
+    "fallback": "local architecture diagram"
+  }
+]

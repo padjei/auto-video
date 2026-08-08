@@ -1,0 +1,50 @@
+{
+  "id": "demo",
+  "title": "Claude Video Studio Demo",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "background": "#07111A",
+  "foreground": "#F7FAFC",
+  "accent": "#68D8FF",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "hero",
+      "durationInFrames": 120,
+      "eyebrow": "Platform Engineering",
+      "headline": "Complex platforms shouldn't feel fragile.",
+      "body": "Design systems that stay clear as they scale."
+    },
+    {
+      "id": "s2",
+      "type": "kineticType",
+      "durationInFrames": 120,
+      "eyebrow": "Reliability",
+      "headline": "Engineer for confidence, not heroics."
+    },
+    {
+      "id": "s3",
+      "type": "metric",
+      "durationInFrames": 120,
+      "metric": "1",
+      "headline": "Operating model",
+      "body": "Architecture, automation and governance working together."
+    },
+    {
+      "id": "s4",
+      "type": "process",
+      "durationInFrames": 120,
+      "headline": "Automation. Governance. Velocity.",
+      "body": "A system that helps teams ship safely and move faster."
+    },
+    {
+      "id": "s5",
+      "type": "cta",
+      "durationInFrames": 120,
+      "eyebrow": "Ready",
+      "headline": "Build with confidence.",
+      "body": "Claude Video Studio"
+    }
+  ]
+}

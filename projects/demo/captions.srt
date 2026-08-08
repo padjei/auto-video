@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,000
+Complex platforms shouldn't feel fragile.
+
+2
+00:00:04,000 --> 00:00:08,000
+Engineer for confidence, not heroics.
+
+3
+00:00:08,000 --> 00:00:12,000
+One operating model.
+
+4
+00:00:12,000 --> 00:00:16,000
+Automation. Governance. Velocity.
+
+5
+00:00:16,000 --> 00:00:20,000
+Build with confidence.

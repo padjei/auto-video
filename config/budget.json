@@ -1,0 +1,10 @@
+{
+  "currency": "USD",
+  "maxProjectSpend": 35,
+  "maxGeneratedVideoClips": 5,
+  "maxGeneratedImages": 8,
+  "maxImageVariantsPerAsset": 1,
+  "maxRevisionCycles": 3,
+  "preferReuse": true,
+  "preferLocalFallbacks": true
+}

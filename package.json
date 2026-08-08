@@ -1,0 +1,41 @@
+{
+  "name": "claude-video-studio",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "tsx scripts/render.ts",
+    "render:demo": "tsx scripts/render.ts --props=projects/demo/project.json --output=out/demo.mp4",
+    "doctor": "tsx scripts/doctor.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf out .remotion",
+    "studio:init": "tsx scripts/studio-init.ts",
+    "studio:plan": "tsx scripts/studio-plan.ts",
+    "studio:render": "tsx scripts/studio-render.ts",
+    "studio:qa": "tsx scripts/studio-qa.ts",
+    "studio:deliver": "tsx scripts/studio-deliver.ts",
+    "studio:final": "tsx scripts/studio-render.ts --mode final",
+    "studio:assets": "tsx scripts/studio-assets.ts",
+    "studio:audio": "tsx scripts/studio-audio.ts",
+    "studio:produce": "tsx scripts/studio-produce.ts",
+    "studio:providers": "tsx scripts/studio-providers.ts",
+    "studio:sync": "tsx scripts/studio-sync.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "remotion": "^4.0.0",
+    "zod": "^3.23.8",
+    "tsx": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "typescript": "^5.7.2",
+    "rimraf": "^6.0.1"
+  }
+}
