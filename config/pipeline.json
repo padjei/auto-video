@@ -1,0 +1,71 @@
+{
+  "_comment": "Defaults for the audio, caption, conform and render stages. Every script reads this and falls back to these same values if the file is absent, so the pipeline still runs on a bare checkout. Per-project overrides belong in projects/<slug>/, not here.",
+
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+
+    "narration": {
+      "targetLufs": -16,
+      "truePeakDb": -1.5,
+      "loudnessRange": 9,
+      "highpassHz": 80,
+      "deEsser": {"freqHz": 6500, "q": 2, "gainDb": -3},
+      "compressor": {"thresholdDb": -20, "ratio": 2.5, "attackMs": 8, "releaseMs": 180, "makeupDb": 2},
+      "_comment": "The de-esser is not optional cosmetics — generated TTS sibilance is consistently hot and will ride over the music bed once the mix is loudness-normalised."
+    },
+
+    "score": {
+      "targetLufs": -27,
+      "truePeakDb": -3,
+      "loudnessRange": 7,
+      "tailSeconds": 3,
+      "_comment": "tailSeconds renders the bed PAST picture so its decay lands in material the mix stage discards. A score that reaches silence on the final frame reads as a dropout, not an ending."
+    },
+
+    "mix": {
+      "targetLufs": -15,
+      "truePeakDb": -1.5,
+      "loudnessRange": 9,
+      "limiterCeiling": 0.95,
+      "duck": {"thresholdDb": 0.03, "ratio": 6, "attackMs": 15, "releaseMs": 420, "makeupDb": 1},
+      "_comment": "Music ducks under narration via sidechain rather than hand-authored volume keyframes. The sidechain KEY must be padded to the full timeline — sidechaincompress ends when its key ends, which will silently truncate the mix at the last spoken word."
+    },
+
+    "deliveryLufs": {"min": -16, "max": -13, "_comment": "LinkedIn and most social players normalise toward -14 LUFS."}
+  },
+
+  "captions": {
+    "maxRowChars": 42,
+    "maxRows": 2,
+    "maxCueSeconds": 7,
+    "maxCharsPerSecond": 21,
+    "interCueGapSeconds": 0.04,
+    "_comment": "Row length is a hard limit, not a style preference: a player that has to re-wrap a row grows the caption block downwards over the picture, which is exactly where lower-third headline type sits."
+  },
+
+  "voiceConform": {
+    "edgeSilenceThresholdDb": -45,
+    "internalPauseThresholdDb": -42,
+    "maxInternalPauseSeconds": 0.28,
+    "beatGuardSeconds": 0.1,
+    "finalBeatGuardSeconds": 0.3,
+    "audibleTempoFactor": 1.15,
+    "maxTempoFactor": 1.6,
+    "_comment": "Used when fitting an alternate narration voice to a LOCKED picture. Past audibleTempoFactor a listener starts to hear the speed-up; past maxTempoFactor the read is unusable and the script length itself has to change."
+  },
+
+  "render": {
+    "colorSpace": "bt709",
+    "draft": {},
+    "final": {"crf": 16, "x264Preset": "slower"},
+    "_comment": "colorSpace must be set explicitly. Left to default, x264 emits yuvj420p with full-range, unspecified-primaries metadata, and a BT.709 player then crushes a lifted shadow toe and shifts warm accents. Low-key grades are where that mistagging shows first."
+  },
+
+  "generation": {
+    "_comment": "config/providers.json ships with local placeholder adapters only (an SVG that reads 'Local visual fallback', a flat-colour clip, and the macOS 'say' voice). Those are wiring stubs, not production providers. Real generation for the nista-launch film ran through the connected Higgsfield MCP server. There is no standalone music model there, which is why scripts/make-score.ts synthesises the score from scratch.",
+    "speechRateIsNoisy": true,
+    "speechRateNote": "seed_audio's speech_rate has little effect on full paragraphs and per-generation length variance dominates it. Do not tune length with speech_rate — generate, measure, and re-roll the outlier beats.",
+    "rerollOutlierBeats": true
+  }
+}

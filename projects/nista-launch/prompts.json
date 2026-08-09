@@ -1,0 +1,150 @@
+{
+  "project": "nista-launch",
+  "stage": "ASSET_PLAN → ASSET_PRODUCTION",
+  "governedBy": [
+    "projects/nista-launch/asset-plan.json",
+    "projects/nista-launch/strategy.md (§2 colour, §5 grade and finish, §5.6 generator normalisation, §6.3 Anchor A, §8 S1/S5/S8)",
+    "projects/nista-launch/storyboard.md (s01, s06, s07, s11)"
+  ],
+
+  "shared": {
+    "usage": "Append `styleSuffix` verbatim to the end of every `prompt` string below, separated by a single space, to form the string actually submitted to the provider. None of the three available image models accept a separate negative-prompt field, so every exclusion is written as positive prohibition language inside the submitted text. The per-asset `negativeGuidance` key is documentation of intent for QA — it is NOT sent to the provider, because its content is already folded into the prompt body and this suffix.",
+
+    "styleSuffix": "Shot on a full-frame cinema camera with spherical prime glass, in the manner of restrained observational documentary photography rather than commercial or stock imagery. Low-key, deliberately under-exposed and desaturated at source: the frame sits almost entirely in its lower luminance range, shadows stay deep but retain real detail and are never crushed to pure black, highlights roll off softly and are never clipped or blown. Exactly one motivated practical light source, warm amber at 2700–3000K, visible in its effect and nothing else lighting the scene; any residual ambient is a deep neutral blue-grey at least four stops under the key. The picture contains three hue families only — navy-black, gunmetal grey-steel, and the single warm amber of the practical. No teal, no cyan, no turquoise, no green, no magenta, no violet, and no teal-and-orange grading of any kind. Fine natural optical grain, no digital sharpening halo, no clarity or texture boost, no baked-in vignette, no added contrast or stylised colour grade — deliver the flat low-key original. Absolutely no visible human face, no eyes, no facial profile and no head in the light. No readable text of any kind anywhere in frame: no letters, no words, no acronyms, no numerals, no glyphs, no signage, no labels, no nameplates, no room numbers and no characters on any screen. No logo, brandmark, wordmark, emblem, seal, crest, coat of arms, badge, patch, lanyard, ID card, credential or uniform. No flag of any nation. Nothing that identifies or implies any specific government agency or institution. No lens flare, no bloom, no anamorphic streak, no volumetric light shafts, no god-rays, no visible haze beams, no chromatic aberration, no over-glossy mirror reflections and no wet-look speculars. No holographic or translucent floating panels, no glowing blue interface graphics, no HUD, no reticles, no scanning lines, no data rain, no particle fields, no decorative bokeh-ball dot fields (natural optical defocus is wanted, decorative bokeh is not), no neon or rim-light glow, and no hexagonal, honeycomb or circuit-board motifs. This is not a stock photograph: no handshake, no boardroom, no group of people pointing at a monitor, no posed corporate gesture, no smiling professionals, no bright open-plan office and no walking-toward-camera hero shot.",
+
+    "normalisationRules": [
+      "Low-key exposure; one practical key source; shadow detail retained (strategy §5.6).",
+      "No face in focus anywhere; figures are back-three-quarter, silhouetted, or defocused past recognition (§5.6).",
+      "No logos, seals, flags, badges or screen text — all screen content is composited in post as motion graphics (§5.6).",
+      "No teal-and-orange grade, no lens flare, no volumetric god-rays, no glowing blue holograms (§5.6).",
+      "Delivered plate must be ≥ 2304×1296 so the 1.055 push from transform-origin 50% 46% has overscan headroom (§5.6).",
+      "Every plate carries the §2 100° scrim (0–34% band fully opaque navy) plus the §5 grade stack in the renderer — the plate must arrive un-graded."
+    ],
+
+    "hardBans": [
+      "visible human faces",
+      "government seals, crests, emblems, badges",
+      "flags of any nation",
+      "any logo or brandmark",
+      "any readable text or UI on any screen or surface",
+      "anything implying a specific named agency",
+      "stock-photo handshake / boardroom / people-pointing-at-a-screen cliché"
+    ],
+
+    "generativeTellsToSteerAgainst": [
+      "over-glossy reflections and wet-look speculars",
+      "lens flares and bloom",
+      "volumetric god-rays and visible light shafts",
+      "holographic blue UI overlays",
+      "floating translucent panels",
+      "neon rim-lighting",
+      "hexagonal and circuit-board motifs"
+    ]
+  },
+
+  "prompts": [
+    {
+      "id": "plate-ops-floor",
+      "sceneId": "s01-hook",
+      "model": "cinematic_studio_2_5",
+      "aspectRatio": "16:9",
+      "params": {
+        "resolution": "4k",
+        "deliverAt": "2304x1296",
+        "variants": 2
+      },
+      "prompt": "A low-key secure operations floor at dusk, photographed on a 40mm spherical prime at f/2.0 on full frame, camera at standing chest height of about 1.5 metres, horizon dead level, no tilt and no dutch. It is 18:40 in winter and the overhead lighting is off — the room is running on night operation. The single key light is a warm amber console task lamp at 2700K standing just inside the right edge of frame and aimed down onto a console desk: it makes one small contained pool of warm light on the desk surface and grazes a single shoulder and the back of the head of one person seated at that console, seen from behind at a three-quarter angle so no part of the face, profile, cheekbone or eye is visible or could ever be visible — the head is a dark shape read against the room, entirely outside the light. The person is still, mid-task, unaware of the camera. Behind them the room recedes into rows of unlit consoles that dissolve into soft defocused dark shapes. Every monitor and display in frame is powered down and reads as flat black glass carrying only a faint warm reflection of the lamp — no image, no glow, no interface, no characters, nothing legible on any screen. Far in the background a tall slot window holds the last of a deep blue-grey dusk at least five stops under the lamp, unsaturated, never cyan and never teal. Expose for the amber practical and let the room fall four to six stops beneath it, keeping detail in the shadows. Composition: all visual weight is carried in the right two-thirds of the frame — the seated figure sits on the right-third vertical, occupying the upper-middle right of the picture, with generous margin on every side so a slow five-percent push never brings them near an edge. The entire lower-left third of the frame is an unlit unbroken plane of empty floor and dark desk return falling away to near-black: no object, no cable, no chair leg, no highlight, no specular, no hard edge and no silhouette enters that region — it is the darkest and emptiest quadrant of the picture and it must stay completely uninterrupted. A trace of atmospheric density softens the far end of the room, with no visible beams or shafts. No faces, no screen text, no signage, no room numbers, no door plates, no nameplates, no seals, no flags, no badges, no lanyards, no uniforms and nothing that would identify any specific organisation.",
+      "negativeGuidance": "Steers against: any visible face or profile; any glowing, powered or legible display; bright overhead office lighting; a cyan, teal or blue-lit control-room look; god-rays or haze beams from the lamp; signage, nameplates, seals, flags, badges or uniforms; a second light source; any object, highlight or edge intruding into the lower-left third; the 'NASA mission control' cliché of many bright screens; over-glossy floor reflections; stock-photo staging.",
+      "rationale": "Cinema Studio 2.5 is trained on cinematic stills and holds a single-practical, four-to-six-stop-under exposure without reaching for fill, which is the one thing the §5.1 filmic curve cannot recover if the plate arrives bright. The prompt buys the Anchor A negative space in camera terms — subject pinned to the right-third vertical, lower-left specified as an unlit unbroken plane — so the 100° scrim lands on shadow rather than on detail it has to bury.",
+      "modelChoiceNote": "4k rather than the default 2k: the provider's 2k tier on 16:9 resolves to roughly 2048×1152, which is under the 2304×1296 minimum in §5.6 and leaves only 1.07× of headroom against a 1.055 push — zero latitude for the reframe nudge the negative-space contract will almost certainly need. Generate at 4k, downsample to 2304×1296."
+    },
+
+    {
+      "id": "plate-whiteboard",
+      "sceneId": "s06-engineers",
+      "model": "nano_banana_pro",
+      "aspectRatio": "16:9",
+      "params": {
+        "resolution": "4k",
+        "deliverAt": "2304x1296",
+        "variants": 2
+      },
+      "prompt": "A tight engineering vignette: one hand mid-derivation at a wall-mounted writing surface, photographed on an 85mm prime at f/2.0 on full frame, camera at chest height, level, about 0.9 metres from the hand. The writing surface is a matte dark graphite-grey glass writing wall — not a white whiteboard — so it renders as a dim low-luminance grey-navy plane and the whole frame stays under-exposed. A right hand and bare forearm enter from the right side of frame, the sleeve of a plain dark charcoal shirt rolled back, with no watch, no ring, no bracelet, no wristband, no tattoo and no mark of any kind on skin, sleeve or cuff. The marker tip is physically in contact with the surface, mid-stroke, an unfinished line trailing from it — this is an argument still being made, not a finished diagram being presented. The notation on the wall is pure unlettered geometry: three or four stacked horizontal tiers, plain rectangles, straight connecting arrows and one bracket, drawn in a pale warm chalk-grey. There is not one letter, word, acronym, digit, numeral, symbol or glyph anywhere on that wall or anywhere else in the frame — the marks carry structure and no language whatsoever. Lighting: a single warm amber practical at 2700K just out of frame to the right, grazing across the wall at a shallow angle so the surface texture is raked and the light falls off steeply toward the left of frame. Nothing else lights the scene. Depth of field is extremely shallow — only the knuckles and the marker tip are truly sharp, and the wall goes soft within about fifteen percent of the frame width in either direction. Composition: hand and marker sit in the right third of the frame, upper-middle, with clear margin from every edge. The lower-left third of the picture is bare unlit wall falling to near-black — the darkest region in the image, with no marks, no writing, no edge, no light and nothing to look at. No face, no head, no shoulders, no torso, no second person, and no reflection of a person in the glass wall. No logo on the marker, the sleeve or the wall, no signage, no seal, no flag, no badge.",
+      "negativeGuidance": "Steers against: the model's overwhelming prior that a writing surface carries writing — any letter, word, acronym, digit or pseudo-glyph is an automatic reject; a bright white whiteboard, which cannot hold a low-key exposure; a face or head entering frame or reflecting in the glass; a second hand, a pointing gesture, or an audience; watches, rings and cuff branding; a fully-drawn finished diagram; overhead fluorescent fill; over-glossy reflections on the glass wall; anything in the lower-left third.",
+      "rationale": "This is the hardest adherence job in the plan — suppressing glyphs on a writing surface while keeping a hand and a marker contact point anatomically clean — and Nano Banana Pro has the strongest prohibition-following and the best hand rendering of the three, which is where the money should go on the film's credibility beat. Specifying a dark graphite writing wall rather than a whiteboard solves the exposure problem at source, so the plate arrives already low-key instead of needing the grade to fight a blown 90% white plane behind the type.",
+      "modelChoiceNote": "Must be generated in the same session and with identical params as plate-keyboard — the s06→s07 T4 descent requires the two plates to read as one person in one room, which means one renderer's micro-contrast, skin rendering and specular character across both."
+    },
+
+    {
+      "id": "plate-keyboard",
+      "sceneId": "s07-scopes-ships",
+      "model": "nano_banana_pro",
+      "aspectRatio": "16:9",
+      "params": {
+        "resolution": "4k",
+        "deliverAt": "2304x1296",
+        "variants": 2
+      },
+      "prompt": "The same engineer, the same room, minutes later: two hands at a mechanical keyboard on a dark desk, photographed on an 85mm prime at f/2.0 on full frame, camera low — the lens sits about 220mm above the desk plane and looks across the surface almost level, so the desk foreground fills the bottom of the frame. The keyboard is plain, unbranded and dark charcoal, with matte grey keycaps that are completely blank: no legends, letters, numbers or symbols printed on any key. Both hands rest in a working position with fingers on the keys, natural relaxed anatomy, exactly five fingers per hand, plain dark rolled sleeves, and no watch, no ring, no bracelet, no lanyard, no badge, no ID and no visible mark on skin or cloth. The key light is the spill from a terminal display that sits entirely outside the frame to the upper right — no screen, monitor, laptop, lid, phone, tablet or piece of glass appears anywhere in the picture, only the light it throws. That display is showing a dark warm-toned session, so its spill is a soft warm amber-white at about 3000K, arriving from frame right at a low angle and raking across the keycaps and the near edge of the desk. Nothing else lights the room; ambient beyond the desk is a deep neutral blue-grey four stops down, never cyan and never teal. The desk is matte dark walnut with no gloss, no polish and no mirror reflection of anything. Shallow depth of field: the near hand's knuckles are sharp and the far end of the keyboard falls off quickly into softness. Composition: the hands sit in the right two-thirds of the frame, slightly below centre, clear of every edge. The lower-left third of the frame is unbroken empty matte desk surface falling into shadow — no mug, no cable, no notebook, no pen, no phone, no paper, no highlight, no edge and no object of any kind — the darkest and emptiest region of the picture. The frame reads as focused build work late in the day: not a meeting, not a demo, not a presentation. No face, no reflected face, no screen text of any kind, no logo or manufacturer mark on the keyboard, keycaps, cable, desk or clothing, no badge, no seal, no flag.",
+      "negativeGuidance": "Steers against: any screen, laptop lid or glass in frame (the structural guarantee against readable UI); printed key legends, which are readable text on a surface the camera is closest to; a face reflected in the desk or any glass; glossy desk lacquer and mirror-finish reflections; a cool blue or cyan monitor spill, which is the default look for this subject and cannot be graded back; mugs, cables, notebooks, phones or lanyards drifting into the lower-left third; a second person or an over-the-shoulder demo framing; malformed or six-fingered hands.",
+      "rationale": "Same model, same params and same session as plate-whiteboard because the T4 descent between s06 and s07 must not read as a cut to a different person, and renderer identity is the cheapest way to buy that continuity — with the key direction, colour temperature and depth-of-field character written identically in both prompts. Blank keycaps plus the display fully out of frame make the 'no readable screen text' guardrail structurally impossible to violate rather than merely discouraged.",
+      "modelChoiceNote": "If clip-keyboard-microcut is later escalated, the selected variant of this plate is the image-to-video source — so pick the variant on negative-space compliance and hand anatomy, not on prettiness."
+    },
+
+    {
+      "id": "plate-record-surface",
+      "sceneId": "s11-the-record",
+      "model": "seedream_v4_5",
+      "aspectRatio": "16:9",
+      "params": {
+        "quality": "high",
+        "deliverAt": "2304x1296",
+        "variants": 1
+      },
+      "prompt": "An almost entirely dark institutional interior after hours, made as texture rather than as a picture. Photographed on a 50mm prime at f/4 on full frame, camera low and level, about 400mm above a flat surface. The frame contains exactly two things: the far edge of an unlit desk or flat filing plane meeting the dark wall behind it, reading as one single soft horizontal edge in the upper right of the frame, and one gentle luminance falloff running from upper right down toward lower left. That is all. Lighting: a single warm amber source far off frame to the right — a corridor door left slightly ajar — throwing a very low level of 2700K light that only just grazes that upper-right edge. The source itself is never visible, and there is no beam, no shaft and no visible pool of light. Expose so the whole image sits within the bottom fifteen percent of its luminance range while holding smooth continuous banding-free gradation through the shadows, with no posterisation, no blotching and no noise. There are no people anywhere in the frame. There are no objects at all: no papers, no folders, no folder tabs, no documents, no labels, no chair, no lamp, no cable, no cup, no plant, no signage and no text of any kind. The lower half of the frame, and the whole lower-left third, are a completely featureless unbroken dark plane — no object, no edge, no seam, no wood-grain figure, no fabric weave, no highlight and no point of interest anywhere within it. The image must still read as a real physical place when viewed at ten percent of its own brightness, purely through that one horizontal edge and that one falloff. Quiet, empty, institutional, after hours. No baked-in vignette, no added contrast and no stylised grade.",
+      "negativeGuidance": "Steers against: the model's instinct to fill an empty frame with a subject — any document, folder, desk lamp, chair, cable, cup or object is a reject; more than one edge; any visible light source, beam or pool; wood grain, weave or surface texture in the band under the credential container; shadow banding and posterisation, which the 0.90 scrim would amplify tenfold; any hint of a person, a window view or an identifiable room; a second falloff competing with the first.",
+      "rationale": "This is the only asset where nothing but tonal behaviour matters: composited at 0.90 scrim, roughly a tenth of its luminance range survives, so shadow gradation quality and the absence of banding are the entire brief — and Seedream's native 4K with precise control is the right instrument for an intentionally near-empty frame. One variant only and it is the first thing to drop on budget, because §8 S8 and the asset-plan both sanction flat bg/base as an identical-shipping alternative.",
+      "modelChoiceNote": "Optional asset. Per asset-plan and storyboard §4.1 this drops first if generation budget is tight; s11 ships identically over flat bg/base #0B1523 with the 96px hairline grid."
+    },
+
+    {
+      "id": "clip-keyboard-microcut",
+      "sceneId": "s07-scopes-ships",
+      "model": "image_to_video_tbd",
+      "aspectRatio": "16:9",
+      "params": {
+        "modelResolution": "No image-to-video model is present in the supplied catalogue (cinematic_studio_2_5, seedream_v4_5 and nano_banana_pro are all stills). Resolve the model at generation time via the provider's catalogue, constrained to: image conditioning from a supplied first frame, 5.0s at 16:9, explicit support for a locked-off / zero camera motion setting, and a low motion-strength control.",
+        "sourceImage": "plate-keyboard (the approved, selected variant — this clip REPLACES that still, it is not an addition)",
+        "durationSeconds": 5.0,
+        "fps": 30,
+        "cameraMotion": "none",
+        "motionStrength": "minimum",
+        "deliverAt": "2304x1296",
+        "coverage": "150 frames minimum — the 144-frame scene plus 0.5s head and tail handle",
+        "gate": "DO NOT GENERATE without an explicit escalation call from visual-director that the still under-delivers the word 'ships'."
+      },
+      "prompt": "Animate the supplied still with the absolute minimum of motion. The camera is locked off: no push, no pull, no zoom, no dolly, no pan, no tilt, no orbit, no handheld drift, no parallax, no rack focus, no speed ramp and no stylised motion blur — the camera does not move at all, at any point, by any amount. Over five seconds the only things that move are these two: the fingers of the right hand depressing two or three keys once, with a small natural weight shift travelling through the wrist, and a single gentle low-amplitude refresh in the warm amber spill light falling across the keycaps, as if the off-screen terminal redrew once. Nothing else in the frame changes. Hands hold correct anatomy at every single frame — exactly five fingers per hand, no extra or merging digits, no rubber-bending knuckles, no melting or smearing of the keycaps beneath the fingers, no wrist detaching from the sleeve. Nothing enters or leaves the frame: no new object, no second arm, no second person, no cursor, no screen, no glass and no reflection appears at any point. Lighting direction, colour temperature, exposure, contrast and depth of field are identical in the final frame to the first — no drift toward brighter, cooler, bluer or more saturated across the duration. The entire lower-left third of the frame stays completely static and unchanged for the full duration: no motion, no light change, no object drift and no noise crawl there at all. No face at any frame, no reflected face, no readable text, character or glyph anywhere at any frame, no logo or manufacturer mark, no badge, no ID, no seal and no flag.",
+      "negativeGuidance": "Steers against: any generated camera move, which would collide with the scene's 1.055→1.010 settle-out and break strategy §4.1's single-axis rule; uncanny hand morphing, the single highest-probability artifact in the film's most credibility-sensitive beat; keycap melt under moving fingers; a screen or reflection materialising mid-clip; exposure, white-balance or saturation drift across the duration, which would make the plate ungradeable; any motion in the lower-left third, where Anchor A type sits; a display refresh that resolves into legible characters.",
+      "rationale": "Image-to-video from the approved plate-keyboard still — not a fresh text-to-video generation — is the only route that preserves the negative-space contract, the framing and the s06 continuity that were already paid for in the still. The prompt makes the clip a two-event micro-cut with a locked camera, because every additional degree of freedom is a way to fail QA rather than a way to sell the word 'ships'.",
+      "modelChoiceNote": "Optional and gated. Default treatment remains the still plus the §4.2A settle-out; storyboard §4.2 documents why, and the fallback is not a degraded option."
+    }
+  ],
+
+  "notes": [
+    "SUBMISSION FORM: the string sent to the provider is `prompt` + a single space + `shared.styleSuffix`. `negativeGuidance` is documentation for video-qa and is never sent — none of these models expose a negative-prompt field, which is why every exclusion is written as positive prohibition language inside the prompt body and the suffix.",
+    "ASPECT RATIO: request the provider's `\"16:9\"` aspect-ratio option. Do not send pixel width/height — the `deliverAt` value in params is a post-download resample target, not an API parameter.",
+    "RESOLUTION ARITHMETIC (why 4k, not 2k): strategy §5.6 sets a hard 2304×1296 minimum. The 2k tier on 16:9 lands near 2048×1152, which gives only 1.07× against a 1.055 push and leaves no latitude for the reframe crop the negative-space contract will likely need. Generate at 4k and Lanczos-downsample to 2304×1296. Never upscale a short plate to meet the spec — upscaling manufactures exactly the over-sharpened micro-texture that the 0.052 grain pass then amplifies.",
+    "DELIVER UN-GRADED: do not crop, colour-correct, contrast-boost, denoise or sharpen the delivered plate, and switch off any provider-side 'auto-enhance', 'cinematic filter' or 'HDR' post-option. The §5 stack (grade → cast → vignette → grain) is applied in the renderer, and a pre-graded plate double-grades and posterises.",
+    "VARIANTS: budget.json sets maxImageVariantsPerAsset = 2. Generate 2 variants of each of the three required plates and 1 of plate-record-surface. Select on the negative-space contract first, guardrail compliance second, aesthetics third — a prettier plate that lights the lower-left is unusable.",
+    "ACCEPTANCE TEST BEFORE ACCEPTING ANY PLATE: (1) sample the region x 0–36%, y 55–100% — mean luminance must be low and contain no edge, highlight or object silhouette; (2) zoom to 200% on every surface and confirm zero glyphs, including pseudo-text on keycaps, wall marks or screen edges; (3) confirm no face, profile or facial reflection anywhere, including in glass and desk surfaces; (4) overlay the §2 100° scrim plus the Anchor A block at x=96, bottom baseline y=856 and confirm the type sits on shadow, not on detail.",
+    "REJECT, DO NOT RETOUCH: if a plate arrives with a legible glyph, a visible face, a bright lower-left third or a cyan-lit look, discard and re-generate. A second generation costs cents; a retouched plate that fails at DRAFT_RENDER costs a revision cycle out of the maximum of three.",
+    "DELIBERATE DEVIATION — plate-whiteboard: the prompt specifies a matte dark graphite writing wall, not a white whiteboard. This is intentional and not a misreading of storyboard s06. A white board cannot hold a low-key exposure, and a blown 90%-luminance plane behind the type would push the scrim's worst-case contrast to the §2 floor. The storyboard's wording ('wall writing surface') is satisfied.",
+    "STRUCTURAL GUARANTEES — plate-keyboard: blank legend-free keycaps and a display placed entirely out of frame are what make 'no readable screen text' impossible rather than merely discouraged. If a variant arrives with printed key legends, reject it — key legends are readable text on the surface nearest the lens.",
+    "CONTINUITY PAIR: plate-whiteboard and plate-keyboard must be generated in the same session, on the same model, at identical params, and ideally on adjacent seeds. The s06→s07 T4 descent is the film's most load-bearing transition and it fails if the two plates read as two rooms or two people. Both prompts pin key direction (frame right), colour temperature (2700–3000K) and depth-of-field character (85mm f/2.0) to the same values for this reason.",
+    "AMBER IS LIGHT, NOT A MARK: storyboard R3 makes accent/signal absent from S1 and S5. The warm practical in these plates is motivated illumination and does not count against the §2 4% accent rule — but no amber-coloured object, LED cluster, status lamp array or indicator panel may appear, because that would read as a graphic accent inside an accent-free archetype.",
+    "SCREEN CONTENT IS ALWAYS COMPOSITED: per §5.6 and §7.18, no generated plate may contain invented UI, dashboards, metrics, alert counts or agency names. Every display in every plate is dark, out of frame, or defocused past glyph resolution.",
+    "GATED ASSET: clip-keyboard-microcut must not be generated without an explicit visual-director escalation, and it replaces plate-keyboard rather than adding to it. plate-keyboard must be generated and approved first regardless, since it is both the default treatment and the image-to-video conditioning frame.",
+    "DROP ORDER ON BUDGET: plate-record-surface first (s11 ships identically over flat bg/base per §8 S8), then the second variant of each plate. The three required plates are not droppable — their fallbacks are motion-graphics re-poses that would cost the film all three of its photographic scenes.",
+    "PROVENANCE: record model id, resolution/quality param, seed, full submitted string and selection reason for every accepted plate into production-state.json, so a QA revision can re-roll a near-neighbour instead of restarting the look."
+  ]
+}

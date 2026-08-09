@@ -1,0 +1,64 @@
+{
+  "_comment": "Beat placement on the 60.000s / 1800-frame timeline. Speech totals 57.473s; the remaining 2.527s is distributed as a 0.30s head, tight 0.18s inter-beat gaps, a longer 0.40s breath before the CTA, and a 0.827s tail so the lockup holds dead-still past the last word.",
+  "score": "assets/nista-launch/score.wav",
+  "bedDb": 0,
+  "duckDb": -11,
+  "beats": [
+    {
+      "id": "b1-hook",
+      "audio": "assets/nista-launch/vo/b1.wav",
+      "leadIn": 0.3,
+      "tail": 0.18,
+      "narration": "Some software is allowed to fail quietly. The systems you run are not."
+    },
+    {
+      "id": "b2-problem",
+      "audio": "assets/nista-launch/vo/b2.wav",
+      "leadIn": 0,
+      "tail": 0.18,
+      "narration": "Modernization rarely fails at the whiteboard. It fails in the distance between those who plan and those who build."
+    },
+    {
+      "id": "b3-positioning",
+      "audio": "assets/nista-launch/vo/b3.wav",
+      "leadIn": 0,
+      "tail": 0.18,
+      "narration": "NISTA Technologies exists to close that distance. We don't just describe technology — we design it, and we build it."
+    },
+    {
+      "id": "b4-engineers",
+      "audio": "assets/nista-launch/vo/b4.wav",
+      "leadIn": 0,
+      "tail": 0.18,
+      "narration": "Every engagement is designed, architected, and delivered by engineers — not staffed by intermediaries. The engineer who scopes it is the engineer who ships it."
+    },
+    {
+      "id": "b5-assurance",
+      "audio": "assets/nista-launch/vo/b5.wav",
+      "leadIn": 0,
+      "tail": 0.18,
+      "narration": "Availability, integrity, and recovery are first-class requirements — engineered in at the first architecture review, not bolted on before launch. Never afterthoughts."
+    },
+    {
+      "id": "b6-secure",
+      "audio": "assets/nista-launch/vo/b6.wav",
+      "leadIn": 0,
+      "tail": 0.18,
+      "narration": "Zero-trust posture. Hardened defaults. Secure development lifecycle — across seven engineering disciplines, from artificial intelligence to cloud and cybersecurity."
+    },
+    {
+      "id": "b7-record",
+      "audio": "assets/nista-launch/vo/b7.wav",
+      "leadIn": 0,
+      "tail": 0.4,
+      "narration": "Registered, active, and contract-ready — across federal, state, local, and prime programs."
+    },
+    {
+      "id": "b8-cta",
+      "audio": "assets/nista-launch/vo/b8.wav",
+      "leadIn": 0,
+      "tail": 0.747,
+      "narration": "NISTA Technologies. Intelligent software for mission-critical organizations. Modernize with confidence."
+    }
+  ]
+}

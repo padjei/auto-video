@@ -12,7 +12,7 @@ export class OpenAIVoiceAdapter implements GenerationAdapter {
         body:JSON.stringify({
           model:process.env.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts',
           input:request.prompt,
-          voice:'alloy',
+          voice:request.voiceId || 'alloy',
           response_format:'mp3',
           instructions:'Professional cinematic narration. Natural pacing, confident, warm, restrained, not salesy.'
         })

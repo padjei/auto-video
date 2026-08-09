@@ -7,3 +7,17 @@ out/
 .DS_Store
 *.log
 public/assets/**/voiceover.aiff
+
+# Generated media too large for git history. See projects/<slug>/ASSETS.md for what
+# is tracked, what is regenerable, and how to rebuild it.
+#
+# Regenerable from scripts/ — deterministic apart from ±1 LSB ffmpeg thread noise:
+public/assets/**/score.wav
+public/assets/**/mix.wav
+public/assets/**/mix-*.wav
+# 4K generation masters (~16-21MB each). The delivered 2304x1296 JPEGs are tracked.
+public/assets/**/plates/
+# Discarded takes and voice auditions.
+public/assets/**/raw/
+public/assets/**/rerolls/
+public/assets/**/vo-tests/

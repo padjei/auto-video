@@ -1,0 +1,84 @@
+1
+00:00:00,300 --> 00:00:04,414
+Some software is allowed to fail quietly.
+The systems you run are not.
+
+2
+00:00:04,514 --> 00:00:07,207
+Modernization rarely fails
+at the whiteboard.
+
+3
+00:00:07,247 --> 00:00:11,376
+It fails in the distance between those
+who plan and those who build.
+
+4
+00:00:11,476 --> 00:00:14,695
+NISTA Technologies exists
+to close that distance.
+
+5
+00:00:14,735 --> 00:00:19,126
+We don't just describe technology —
+we design it, and we build it.
+
+6
+00:00:19,226 --> 00:00:22,011
+Every engagement is designed, architected,
+
+7
+00:00:22,051 --> 00:00:25,979
+and delivered by engineers —
+not staffed by intermediaries.
+
+8
+00:00:26,019 --> 00:00:29,786
+The engineer who scopes it is
+the engineer who ships it.
+
+9
+00:00:29,886 --> 00:00:33,516
+Availability, integrity, and recovery
+are first-class requirements —
+
+10
+00:00:33,556 --> 00:00:37,618
+engineered in at the first architecture
+review, not bolted on before launch.
+
+11
+00:00:37,658 --> 00:00:38,737
+Never afterthoughts.
+
+12
+00:00:38,837 --> 00:00:41,062
+Zero-trust posture. Hardened defaults.
+
+13
+00:00:41,102 --> 00:00:45,113
+Secure development lifecycle —
+across seven engineering disciplines,
+
+14
+00:00:45,153 --> 00:00:48,490
+from artificial intelligence
+to cloud and cybersecurity.
+
+15
+00:00:48,590 --> 00:00:51,159
+Registered, active, and contract-ready —
+
+16
+00:00:51,199 --> 00:00:54,396
+across federal, state, local,
+and prime programs.
+
+17
+00:00:54,496 --> 00:00:58,345
+NISTA Technologies. Intelligent software
+for mission-critical organizations.
+
+18
+00:00:58,385 --> 00:00:59,716
+Modernize with confidence.

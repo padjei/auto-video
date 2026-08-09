@@ -188,7 +188,8 @@ projects/my-video/
 ├── production-state.json
 ├── asset-plan.json
 ├── asset-manifest.json
-├── narration.json
+├── narration-plan.json
+├── audio-timing.json
 ├── audio-manifest.json
 ├── project.json
 ├── captions.srt

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "plate-ops-floor",
+    "sceneId": "s01-hook",
+    "type": "image",
+    "required": true,
+    "aspectRatio": "16:9",
+    "width": 2304,
+    "height": 1296,
+    "archetype": "S1 — Cinematic plate, institutional surface",
+    "intent": "The visible institutional surface the whole film will descend beneath: a low-key secure operations floor at dusk, quiet and already running, where one person is on watch over systems the viewer cannot see.",
+    "composition": "Hard lower-left-third negative space: the region x 0–830px, y 715–1296px (0–36% x, 55–100% y) must be unbroken low-luminance surface — no subject, no highlight, no hard edge — because the Anchor A type block sits there at 1920x1080 scale (x=96, block bottom baseline y=856). The single lit subject, a back-three-quarter silhouetted figure at a console, falls between x 1320–2190px and y 144–840px (57–95% x, 11–65% y). Frame must survive a 1.055 push from transform-origin 50% 46% without the subject leaving that box, and must survive the 100-degree scrim whose 0–34% band is fully opaque navy.",
+    "fallback": "S2 statement card: bg/base #0B1523 with the non-scrolling 96px hairline grid at #24344A opacity 0.18 drifting -8px, plus a single 1px line/strong #2C3E56 horizon rule at y=620 that draws in from both frame edges over 22 frames. Headline copy, type scale and Anchor A placement are unchanged. Zero generation cost.",
+    "guardrails": [
+      "No visible faces — figures are back-three-quarter, silhouetted, or defocused past recognition",
+      "No government seals, crests, emblems or badges",
+      "No logos or brand marks of any kind",
+      "No readable screen text — every display is dark, defocused, or out of frame",
+      "No US flags or any national flag",
+      "Nothing implying a specific named agency — no building nameplates, signage, door plates, room numbers or uniforms",
+      "Per strategy.md 5.6: low-key exposure, one practical key source, shadow detail retained, no teal-and-orange grade, no lens flare, no volumetric god-rays, no glowing blue holograms"
+    ]
+  },
+  {
+    "id": "plate-whiteboard",
+    "sceneId": "s06-engineers",
+    "type": "image",
+    "required": true,
+    "aspectRatio": "16:9",
+    "width": 2304,
+    "height": 1296,
+    "archetype": "S5 — Engineering vignette, the hands (design / scope)",
+    "intent": "Proof that the people who design the system are real engineers doing the work themselves: one hand mid-derivation at a wall writing surface, marker in contact with the board, an argument still being made rather than a finished diagram being presented.",
+    "composition": "Lower-left third (x 0–830px, y 715–1296px) must be clean falloff into shadow for the Anchor A headline; it should be the darkest quadrant of the plate. The hand and marker sit between x 1340–2120px and y 195–805px (58–92% x, 15–62% y). Shallow depth of field: the hand is the only element in focus, the board surface falls off within ~15% of frame width. Single practical key light from frame right, matching plate-keyboard so the two S5 plates read as one room and one person.",
+    "fallback": "Re-pose the S4 architecture diagram at interface depth on bg/elevated #141F2E, with the node-and-path system drawing on live behind the Anchor A headline (22-frame stroke-dasharray reveal, 5-frame stagger, exactly one accent/signal active node). Same headline, same type scale, same settle-out camera. Zero generation cost.",
+    "guardrails": [
+      "No visible faces — hands and forearm only, no head, shoulders or reflection of a face in frame",
+      "No government seals, crests, emblems or badges",
+      "No logos or brand marks — including on the marker, sleeve, watch or wall",
+      "No readable text of any kind on the writing surface: notation must be purely abstract structure (tiers, boxes, arrows, a stack), with no words, no acronyms, and no numerals that could be read as a metric or a date",
+      "No US flags or any national flag",
+      "Nothing implying a specific named agency",
+      "Per strategy.md 5.6: low-key exposure, one practical key source, shadow detail retained, no teal-and-orange grade, no lens flare, no volumetric god-rays, no glowing blue holograms"
+    ]
+  },
+  {
+    "id": "plate-keyboard",
+    "sceneId": "s07-scopes-ships",
+    "type": "image",
+    "required": true,
+    "aspectRatio": "16:9",
+    "width": 2304,
+    "height": 1296,
+    "archetype": "S5 — Engineering vignette, the hands (build / ship)",
+    "intent": "The same engineer shipping what they just scoped: hands at a mechanical keyboard on a dark desk, a terminal's glow falling across the key caps and the desk surface. This must read as build work, not as a meeting or a demo.",
+    "composition": "Lower-left third (x 0–830px, y 715–1296px) reserved as unbroken dark desk surface for the Anchor A line. Hands fall between x 1270–2075px and y 390–970px (55–90% x, 30–75% y). The screen itself is out of frame or defocused past any possible glyph resolution — only its spill light is in shot. Continuity with plate-whiteboard is mandatory: same key direction (frame right), same colour temperature, same depth-of-field character, so the T4 strata descent between the two plates reads as one continuous person rather than a cut to a different scene.",
+    "fallback": "Re-pose the S3 strata descent as a full scene: the INTERFACE band scaling past the lens into SUBSTRATE on bg/elevated #141F2E with mono stratum labels and the 2px accent/signal through-line, carrying the same headline-sm type at Anchor A. Zero generation cost.",
+    "guardrails": [
+      "No visible faces — hands and forearms only, and no face reflected in the desk surface or any glass",
+      "No government seals, crests, emblems or badges",
+      "No logos or brand marks — no manufacturer marks on the keyboard, key caps, laptop lid, mug or cabling",
+      "No readable screen text — the display is out of frame or defocused so that no character can resolve; no code, no terminal output, no UI chrome",
+      "No US flags or any national flag",
+      "Nothing implying a specific named agency — no lanyard, badge, ID card or credential visible on the desk",
+      "Per strategy.md 5.6: low-key exposure, one practical key source, shadow detail retained, no teal-and-orange grade, no lens flare, no volumetric god-rays, no glowing blue holograms"
+    ]
+  },
+  {
+    "id": "plate-record-surface",
+    "sceneId": "s11-the-record",
+    "type": "image",
+    "required": false,
+    "aspectRatio": "16:9",
+    "width": 2304,
+    "height": 1296,
+    "archetype": "S8 — Credential block backdrop (optional)",
+    "intent": "Optional only: a near-black institutional surface — an unlit desk edge, a filing plane, a room after hours — that gives the credential record a physical place to sit rather than floating on a flat field. It must be barely perceptible; it is texture, not a picture.",
+    "composition": "The plate is composited at 0.90 scrim of bg/deep #060C15, so it must be legible as structure at 10% of its own luminance. Exactly one soft horizontal edge in the upper right (x 1150–2304px, y 200–650px) and one gentle falloff; nothing else. The band under the credential container — x 115–1490px, y 920–1130px (5–65% x, 71–87% y) — must be completely featureless so the container's 0.94 fill and 18px backdrop blur have nothing to fight. No point of interest anywhere in the lower-left third.",
+    "fallback": "Flat bg/base #0B1523 with the non-scrolling 96px hairline grid at #24344A opacity 0.18. This is the explicitly sanctioned alternative in strategy.md section 8 (S8: 'over a darkened S1 plate at 0.90 scrim, OR over bg/base'), so no generation is required and the scene ships identically either way. If the generation budget is tight, drop this asset first.",
+    "guardrails": [
+      "No visible faces — no people at all in this plate",
+      "No government seals, crests, emblems or badges",
+      "No logos or brand marks",
+      "No readable text of any kind — no documents, no labels, no folder tabs, no signage",
+      "No US flags or any national flag",
+      "Nothing implying a specific named agency",
+      "Per strategy.md 5.6: low-key exposure, one practical key source, shadow detail retained, no teal-and-orange grade, no lens flare, no volumetric god-rays, no glowing blue holograms"
+    ]
+  },
+  {
+    "id": "clip-keyboard-microcut",
+    "sceneId": "s07-scopes-ships",
+    "type": "video",
+    "required": false,
+    "aspectRatio": "16:9",
+    "width": 2304,
+    "height": 1296,
+    "durationSeconds": 5.0,
+    "archetype": "S5 — Engineering vignette (optional escalation)",
+    "intent": "Escalation path only, and a REPLACEMENT for plate-keyboard rather than an addition: live micro-motion at the keyboard — one hand shifting weight, the terminal spill light refreshing once — if and only if visual-director judges that the still under-delivers the word 'ships'. Default is the still; do not generate this without that explicit call.",
+    "composition": "Identical framing and negative-space contract to plate-keyboard: lower-left third (x 0–830px, y 715–1296px) held clean and static for the whole clip so the Anchor A type never sits over movement. All motion is confined to the right/upper field (x above 1270px). The clip itself contains NO camera move — no push, no drift, no handheld — because the scene's 1.055-to-1.010 settle-out is applied in post; a second motion source would break the single-axis rule in strategy.md section 4.1. Must cover the full 144-frame scene at 30fps with 0.5s of head and tail handle.",
+    "fallback": "plate-keyboard (the still) with the strategy.md section 4.2A settle-out camera move. This is the default treatment, not a degraded one — the still is preferred on both cost and artifact risk, since generated hands in motion are the highest-probability uncanny failure in the film's most credibility-sensitive beat.",
+    "guardrails": [
+      "No visible faces at any frame of the clip",
+      "No government seals, crests, emblems or badges",
+      "No logos or brand marks on keyboard, key caps, hardware, cabling or clothing",
+      "No readable screen text at any frame — the display stays out of frame or defocused past glyph resolution for the entire duration",
+      "No US flags or any national flag",
+      "Nothing implying a specific named agency — no badge, lanyard or ID in frame",
+      "Per strategy.md 5.6: low-key exposure, one practical key source, shadow detail retained, no teal-and-orange grade, no lens flare, no volumetric god-rays, no glowing blue holograms",
+      "No generated camera motion, no speed ramp, no motion blur pass — the film's camera has one degree of freedom (Z) and it is applied in post"
+    ]
+  }
+]

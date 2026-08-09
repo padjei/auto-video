@@ -1,11 +1,11 @@
 import 'dotenv/config';
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
-import path from 'node:path';
 import {produceAssets} from '../src/studio/assets';
 import {produceAudio} from '../src/studio/audio';
 import {syncProjectMedia} from '../src/studio/sync';
 import {makeCaptions} from '../src/studio/captions';
+import {legacyNarrationPath, narrationPlanPath} from '../src/studio/narration';
 import {runQA} from '../src/studio/qa';
 import {advanceState,loadState,saveState} from '../src/studio/state';
 
@@ -22,15 +22,20 @@ const run=(script:string,extra:string[]=[])=>{
 advanceState(project,'ASSET_PRODUCTION');
 await produceAssets(project);
 
-const narration=path.resolve('projects',project,'narration.json');
-if (fs.existsSync(narration)) {
+// The audio stage renders the per-beat narration, builds the mix, and writes the
+// captions and the timing contract the picture is cut to. There is no separate
+// caption step any more — captions come out of the same measurement as the mix,
+// and makeCaptions() below only verifies that they did.
+const plan=narrationPlanPath(project);
+const hasNarration=fs.existsSync(plan) || fs.existsSync(legacyNarrationPath(project));
+if (hasNarration) {
   advanceState(project,'AUDIO');
   await produceAudio(project);
 }
 
 advanceState(project,'EDIT');
 syncProjectMedia(project);
-makeCaptions(project);
+if (hasNarration) makeCaptions(project);
 
 advanceState(project,'DRAFT_RENDER');
 run('scripts/studio-render.ts',['--mode','draft']);

@@ -3,6 +3,8 @@ export type GenerationRequest = {
   project: string;
   prompt: string;
   outputPath: string;
+  /** Provider-specific voice id. Ignored by non-voice adapters. */
+  voiceId?: string;
   width?: number;
   height?: number;
   durationSeconds?: number;

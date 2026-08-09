@@ -1,0 +1,64 @@
+{
+  "_comment": "Variant narration plan \u2014 voice 'arthur'. Clips are conformed per-beat to the locked picture by scripts/conform-voice.ts, which budgets each beat its FULL span less a guard. The conform therefore already consumes the trailing silence, so each tail here is exactly that guard \u2014 carrying the primary read's tails would double-count and push the film long.",
+  "score": "assets/nista-launch/score.wav",
+  "bedDb": 0,
+  "duckDb": -11,
+  "beats": [
+    {
+      "id": "b1-hook",
+      "audio": "assets/nista-launch/vo-arthur/b1.wav",
+      "leadIn": 0.3,
+      "tail": 0.1,
+      "narration": "Some software is allowed to fail quietly. The systems you run are not."
+    },
+    {
+      "id": "b2-problem",
+      "audio": "assets/nista-launch/vo-arthur/b2.wav",
+      "leadIn": 0,
+      "tail": 0.1,
+      "narration": "Modernization rarely fails at the whiteboard. It fails in the distance between those who plan and those who build."
+    },
+    {
+      "id": "b3-positioning",
+      "audio": "assets/nista-launch/vo-arthur/b3.wav",
+      "leadIn": 0,
+      "tail": 0.1,
+      "narration": "NISTA Technologies exists to close that distance. We don't just describe technology \u2014 we design it, and we build it."
+    },
+    {
+      "id": "b4-engineers",
+      "audio": "assets/nista-launch/vo-arthur/b4.wav",
+      "leadIn": 0,
+      "tail": 0.1,
+      "narration": "Every engagement is designed, architected, and delivered by engineers \u2014 not staffed by intermediaries. The engineer who scopes it is the engineer who ships it."
+    },
+    {
+      "id": "b5-assurance",
+      "audio": "assets/nista-launch/vo-arthur/b5.wav",
+      "leadIn": 0,
+      "tail": 0.1,
+      "narration": "Availability, integrity, and recovery are first-class requirements \u2014 engineered in at the first architecture review, not bolted on before launch. Never afterthoughts."
+    },
+    {
+      "id": "b6-secure",
+      "audio": "assets/nista-launch/vo-arthur/b6.wav",
+      "leadIn": 0,
+      "tail": 0.1,
+      "narration": "Zero-trust posture. Hardened defaults. Secure development lifecycle \u2014 across seven engineering disciplines, from artificial intelligence to cloud and cybersecurity."
+    },
+    {
+      "id": "b7-record",
+      "audio": "assets/nista-launch/vo-arthur/b7.wav",
+      "leadIn": 0,
+      "tail": 0.1,
+      "narration": "Registered, active, and contract-ready \u2014 across federal, state, local, and prime programs."
+    },
+    {
+      "id": "b8-cta",
+      "audio": "assets/nista-launch/vo-arthur/b8.wav",
+      "leadIn": 0,
+      "tail": 0.3333,
+      "narration": "NISTA Technologies. Intelligent software for mission-critical organizations. Modernize with confidence."
+    }
+  ]
+}

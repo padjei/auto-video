@@ -2,6 +2,7 @@
   "name": "claude-video-studio",
   "version": "3.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render": "tsx scripts/render.ts",
@@ -17,6 +18,8 @@
     "studio:final": "tsx scripts/studio-render.ts --mode final",
     "studio:assets": "tsx scripts/studio-assets.ts",
     "studio:audio": "tsx scripts/studio-audio.ts",
+    "studio:assemble": "tsx scripts/assemble-audio.ts",
+    "studio:migrate-narration": "tsx scripts/migrate-narration.ts",
     "studio:produce": "tsx scripts/studio-produce.ts",
     "studio:providers": "tsx scripts/studio-providers.ts",
     "studio:sync": "tsx scripts/studio-sync.ts"

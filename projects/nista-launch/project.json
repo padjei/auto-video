@@ -1,0 +1,141 @@
+{
+  "id": "nista-launch",
+  "title": "NISTA Technologies — Launch Film",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "background": "#0B1523",
+  "foreground": "#F2EFE8",
+  "accent": "#C6A15B",
+  "voiceover": "assets/nista-launch/mix.wav",
+  "scenes": [
+    {
+      "id": "s01-hook",
+      "type": "cinematicPlate",
+      "durationInFrames": 135,
+      "transition": "cut",
+      "camera": "push",
+      "headline": "Your systems cannot\nfail quietly.",
+      "media": "assets/nista-launch/ops-floor.jpg"
+    },
+    {
+      "id": "s02-problem",
+      "type": "statementCard",
+      "durationInFrames": 209,
+      "transition": "cut",
+      "camera": "settle",
+      "eyebrow": "The failure mode",
+      "headline": "Modernization fails\nin delivery."
+    },
+    {
+      "id": "s03-positioning",
+      "type": "architectureDiagram",
+      "durationInFrames": 233,
+      "transition": "strataWipe",
+      "camera": "push",
+      "eyebrow": "NISTA Technologies",
+      "headline": "We design it. We build it.",
+      "caption": "Depth 01",
+      "diagram": {
+        "depth": 0,
+        "active": "orchestration",
+        "tiers": ["Interface", "Service", "Platform", "Substrate"]
+      }
+    },
+    {
+      "id": "s04-whiteboard",
+      "type": "engineeringVignette",
+      "durationInFrames": 160,
+      "transition": "cut",
+      "camera": "settle",
+      "headline": "Engineers.",
+      "media": "assets/nista-launch/whiteboard.jpg"
+    },
+    {
+      "id": "s05-keyboard",
+      "type": "engineeringVignette",
+      "durationInFrames": 160,
+      "transition": "strataDescent",
+      "camera": "push",
+      "headline": "Not intermediaries.",
+      "media": "assets/nista-launch/keyboard.jpg"
+    },
+    {
+      "id": "s06-assurance",
+      "type": "assuranceTriad",
+      "durationInFrames": 107,
+      "transition": "cut",
+      "camera": "settle",
+      "triad": [
+        {"label": "01", "title": "Availability"},
+        {"label": "02", "title": "Integrity"},
+        {"label": "03", "title": "Recovery"}
+      ]
+    },
+    {
+      "id": "s07-not-bolted-on",
+      "type": "statementCard",
+      "durationInFrames": 161,
+      "transition": "cut",
+      "camera": "push",
+      "eyebrow": "First-class requirements",
+      "headline": "Engineered in.\nNot bolted on."
+    },
+    {
+      "id": "s08-secure",
+      "type": "statementCard",
+      "durationInFrames": 110,
+      "transition": "cut",
+      "camera": "settle",
+      "headline": "Secure by design."
+    },
+    {
+      "id": "s09-disciplines",
+      "type": "disciplineGrid",
+      "durationInFrames": 182,
+      "transition": "cut",
+      "camera": "push",
+      "eyebrow": "Seven engineering disciplines",
+      "disciplines": [
+        "Artificial Intelligence",
+        "Data Engineering",
+        "Enterprise Software",
+        "Platform Engineering",
+        "Cloud Engineering",
+        "Cybersecurity",
+        "Digital Transformation"
+      ]
+    },
+    {
+      "id": "s10-record",
+      "type": "credentialBlock",
+      "durationInFrames": 178,
+      "transition": "strataDescent",
+      "camera": "settle",
+      "headline": "Registered. Active.\nContract-ready.",
+      "credential": {
+        "over": "base",
+        "fields": [
+          {"label": "SAM.gov", "value": "ACTIVE"},
+          {"label": "UEI", "value": "YGRB3SMAWE6"},
+          {"label": "CAGE", "value": "22PQ4"},
+          {"label": "Classification", "value": ["CERTIFIED", "SMALL BUSINESS"]}
+        ],
+        "footnote": "NAICS 541511 · 541512 · 541519 · 518210 · 541715"
+      }
+    },
+    {
+      "id": "s11-cta",
+      "type": "ctaLockup",
+      "durationInFrames": 165,
+      "transition": "dipToDeep",
+      "camera": "hold",
+      "headline": "Modernize with\nconfidence.",
+      "cta": {
+        "mark": "assets/nista-launch/nista-mark.svg",
+        "wordmark": "NISTA TECHNOLOGIES",
+        "url": "nistatech.com"
+      }
+    }
+  ]
+}

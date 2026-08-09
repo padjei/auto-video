@@ -1,0 +1,250 @@
+{
+  "project": "nista-launch",
+  "finalVideo": "out/nista-launch-final.mp4",
+  "deliveredAt": "2026-08-09T00:17:00.507Z",
+  "metadata": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640032",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 50,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/90000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 5400000,
+        "duration": "60.000000",
+        "bit_rate": "5917237",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1800",
+        "extradata_size": 54,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc61.19.100 libx264"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2882560,
+        "duration": "60.053333",
+        "bit_rate": "317375",
+        "nb_frames": "2815",
+        "extradata_size": 2,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/Users/princeadjei/Projects/Videos/claude-autonomous-video-studio/out/nista-launch-final.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "60.053333",
+      "size": "46827126",
+      "bit_rate": "6238071",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.12.102",
+        "comment": "Made with Remotion 4.0.507"
+      }
+    }
+  },
+  "title": "NISTA Technologies \u2014 Launch Film",
+  "sha256": "fc7eb18bc62a597348faa1078c482250aa9b18550a4f145b4413f25dd670263d",
+  "sizeBytes": 46494446,
+  "spec": {
+    "aspect": "16:9",
+    "resolution": "1920x1080",
+    "fps": 30,
+    "frames": 1800,
+    "duration": "60.000s",
+    "video": "h264 High, CRF 16, x264 preset slower",
+    "colour": "BT.709 primaries/transfer/matrix, limited (tv) range, yuv420p",
+    "audio": "AAC-LC 48kHz stereo",
+    "loudness": "-14.5 LUFS integrated, -1.1 dBFS true peak",
+    "faststart": true,
+    "avSync": "sample-accurate; all three masters muxed identically by ffmpeg (Remotion's muxer was leaving AAC priming as programme, 42.67ms late)"
+  },
+  "platforms": [
+    "LinkedIn feed (sound-off first)",
+    "nistatech.com hero"
+  ],
+  "deliverables": {
+    "master": "out/nista-launch-final.mp4",
+    "captions": "projects/nista-launch/captions.srt",
+    "storyboard": "projects/nista-launch/storyboard.md",
+    "qaReport": "projects/nista-launch/qa-report.md",
+    "script": "projects/nista-launch/script.md",
+    "artDirection": "projects/nista-launch/strategy.md"
+  },
+  "provenance": {
+    "narration": "Synthetic voice (Higgsfield seed_audio, preset voice 'Reid'), user-selected. NOT a human performer \u2014 disclose if your channel requires it.",
+    "music": "Original score synthesised from scratch with FFmpeg (scripts/make-score.ts). No third-party sample, library or licence. Fully owned.",
+    "photography": "3 AI-generated stills (Higgsfield). No stock, no real location, no identifiable person. See prompts.json for full generation prompts.",
+    "generatedVideoClips": 0,
+    "motionGraphics": "8 of 11 scenes are pure motion graphics rendered in Remotion.",
+    "logo": "Monochrome knockout treatment of the NISTA mark, redrawn as vector. Brand violet/mint excluded by the film's palette per client direction. REPLACE with the official lockup when supplied."
+  },
+  "claimCompliance": {
+    "verifiedBy": "video-qa full-frame text inventory",
+    "assertedOnScreen": [
+      "SAM.gov ACTIVE",
+      "UEI YGRB3SMAWE6",
+      "CAGE 22PQ4",
+      "Certified Small Business",
+      "NAICS 541511 / 541512 / 541519 / 518210 / 541715"
+    ],
+    "deliberatelyAbsent": [
+      "FedRAMP",
+      "ATO",
+      "IL-level / DoD authorization",
+      "SOC 2",
+      "NIST",
+      "any contract vehicle",
+      "any named agency customer",
+      "any past performance",
+      "any invented metric"
+    ],
+    "openItem": "'Contract-ready' (scene s10) is an inference from active SAM.gov/CAGE/UEI registration rather than an enumerated fact on nistatech.com. Defensible, but worth counsel sign-off before publication."
+  },
+  "knownLimitations": [
+    "Narration is synthetic; a human VO read would lift the film further.",
+    "The three plates are AI-generated and depict no real NISTA facility or staff.",
+    "Type hierarchy: fg/tertiary was lightened to clear the 4.5:1 contrast floor, so its tonal separation from fg/secondary is now carried mainly by size and weight."
+  ],
+  "qa": {
+    "cycle": 1,
+    "critical": 0,
+    "major": 4,
+    "minor": 24,
+    "acceptanceChecks": "10/10 pass",
+    "verdict": "DELIVERABLE",
+    "report": "projects/nista-launch/qa-report.md"
+  },
+  "variants": [
+    {
+      "voice": "Reid (male)",
+      "file": "out/nista-launch-final.mp4",
+      "captions": "projects/nista-launch/captions.srt",
+      "sha256": "fc7eb18bc62a597348faa1078c482250aa9b18550a4f145b4413f25dd670263d",
+      "worstTempoFactor": 1.13,
+      "note": "Primary. The picture was cut against this read."
+    },
+    {
+      "voice": "Vera (female)",
+      "file": "out/nista-launch-final-vera.mp4",
+      "captions": "projects/nista-launch/captions-vera.srt",
+      "sha256": "3725b4c849675d4a508b97f7fc634fac78aca55c5fb22c5900072273b20b4117",
+      "worstTempoFactor": 1.16,
+      "note": "Conformed to the locked picture. Beats 1, 5, 6 and 8 carry an audible speed-up."
+    },
+    {
+      "voice": "Arthur (male)",
+      "file": "out/nista-launch-final-arthur.mp4",
+      "captions": "projects/nista-launch/captions-arthur.srt",
+      "sha256": "ba2ef9ce1c13334b89e3b070f99fd11ad55cb0a1dfbea1d8bb15603fe7c33f4f",
+      "worstTempoFactor": 1.131,
+      "note": "Conformed to the locked picture. Tempo stays transparent throughout; three beats are slowed rather than sped."
+    }
+  ],
+  "variantMethod": "Picture is identical across all three \u2014 the video stream is stream-copied, never re-encoded, so the image is bit-identical to the approved master. Only narration differs. Each alternate read is fitted per-beat to the locked cut by scripts/conform-voice.ts. Worst cut drift 23ms (0.69 frames); every cut still lands on its line."
+}

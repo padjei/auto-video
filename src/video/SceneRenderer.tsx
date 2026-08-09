@@ -1,75 +1,59 @@
+/**
+ * Scene dispatcher.
+ *
+ * Replaces the previous monolithic renderer. There is no drawing code in this file —
+ * it only resolves a scene to one of the nine archetypes in strategy §8. Legacy
+ * generic scene types from older projects are mapped onto the nearest archetype so
+ * existing project.json files keep rendering.
+ */
 import React from 'react';
-import {
-  AbsoluteFill, Img, OffthreadVideo, interpolate, spring,
-  staticFile, useCurrentFrame, useVideoConfig
-} from 'remotion';
-import type {Scene,VideoProject} from '../types';
+import type {SceneArchetype, SceneComponentProps, SceneType} from '../types';
 
-const clamp = {extrapolateLeft:'clamp',extrapolateRight:'clamp'} as const;
-const isVideo = (p:string) => /\.(mp4|mov|webm|m4v)$/i.test(p);
+import {CinematicPlate} from './scenes/CinematicPlate';
+import {StatementCard} from './scenes/StatementCard';
+import {StrataDescentScene} from './scenes/StrataDescentScene';
+import {ArchitectureDiagram} from './scenes/ArchitectureDiagram';
+import {EngineeringVignette} from './scenes/EngineeringVignette';
+import {AssuranceTriad} from './scenes/AssuranceTriad';
+import {DisciplineGrid} from './scenes/DisciplineGrid';
+import {CredentialBlock} from './scenes/CredentialBlock';
+import {CtaLockup} from './scenes/CtaLockup';
 
-export const SceneRenderer:React.FC<{scene:Scene;project:VideoProject;index:number}> = ({scene,project,index}) => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const enter = spring({fps,frame,config:{damping:18,stiffness:110}});
-  const exit = interpolate(frame,[Math.max(0,scene.durationInFrames-12),scene.durationInFrames],[1,0],clamp);
-  const opacity = Math.min(enter,exit);
-  const y = interpolate(enter,[0,1],[50,0]);
-  const scale = interpolate(enter,[0,1],[0.97,1]);
-  const accent = scene.accent ?? project.accent ?? '#6EE7F9';
+const LEGACY_MAP: Record<string, SceneArchetype> = {
+  hero: 'statementCard',
+  kineticType: 'statementCard',
+  metric: 'statementCard',
+  quote: 'statementCard',
+  split: 'cinematicPlate',
+  image: 'cinematicPlate',
+  video: 'engineeringVignette',
+  diagram: 'architectureDiagram',
+  code: 'architectureDiagram',
+  ui: 'architectureDiagram',
+  process: 'disciplineGrid',
+  cta: 'ctaLockup',
+};
 
-  const mediaLayer = scene.media ? (
-    isVideo(scene.media) ? (
-      <OffthreadVideo
-        src={staticFile(scene.media)}
-        muted
-        style={{
-          position:'absolute',inset:0,width:'100%',height:'100%',
-          objectFit:scene.mediaFit ?? 'cover',opacity:0.58
-        }}
-      />
-    ) : (
-      <Img
-        src={staticFile(scene.media)}
-        style={{
-          position:'absolute',inset:0,width:'100%',height:'100%',
-          objectFit:scene.mediaFit ?? 'cover',opacity:0.58
-        }}
-      />
-    )
-  ) : null;
+const ARCHETYPES: Record<SceneArchetype, React.FC<SceneComponentProps>> = {
+  cinematicPlate: CinematicPlate,
+  statementCard: StatementCard,
+  strataDescent: StrataDescentScene,
+  architectureDiagram: ArchitectureDiagram,
+  engineeringVignette: EngineeringVignette,
+  assuranceTriad: AssuranceTriad,
+  disciplineGrid: DisciplineGrid,
+  credentialBlock: CredentialBlock,
+  ctaLockup: CtaLockup,
+};
 
-  return (
-    <AbsoluteFill style={{
-      overflow:'hidden',
-      color:project.foreground ?? '#F7FAFC',
-      fontFamily:'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif',
-      background:index%2===0
-        ? 'radial-gradient(circle at 78% 20%, rgba(57,189,248,.16), transparent 32%), linear-gradient(135deg,#061019,#0B1722)'
-        : 'radial-gradient(circle at 18% 78%, rgba(139,92,246,.15), transparent 32%), linear-gradient(135deg,#07111A,#111827)'
-    }}>
-      {mediaLayer}
-      {scene.media ? <AbsoluteFill style={{background:'linear-gradient(90deg,rgba(3,9,15,.86),rgba(3,9,15,.38))'}}/> : null}
+export const resolveArchetype = (type: SceneType): SceneArchetype =>
+  (type in ARCHETYPES ? (type as SceneArchetype) : LEGACY_MAP[type]) ?? 'statementCard';
 
-      <div style={{
-        position:'absolute',inset:0,opacity:0.14,
-        backgroundImage:'linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px)',
-        backgroundSize:'64px 64px',transform:`translateY(${(frame*0.25)%64}px)`
-      }}/>
+/** Archetypes that carry generated photography and therefore the heavier finish. */
+export const isPhotographic = (archetype: SceneArchetype): boolean =>
+  archetype === 'cinematicPlate' || archetype === 'engineeringVignette';
 
-      <div style={{
-        position:'relative',width:'82%',margin:'auto',
-        transform:`translateY(${y}px) scale(${scale})`,opacity
-      }}>
-        {scene.eyebrow && <div style={{color:accent,fontSize:26,letterSpacing:4,textTransform:'uppercase',marginBottom:24}}>{scene.eyebrow}</div>}
-        {scene.metric && <div style={{fontSize:160,fontWeight:800,color:accent,lineHeight:.95,marginBottom:24}}>{scene.metric}</div>}
-        {scene.headline && <div style={{fontSize:scene.type==='cta'?92:80,fontWeight:750,lineHeight:1.02,maxWidth:1450,textShadow:'0 10px 35px rgba(0,0,0,.35)'}}>{scene.headline}</div>}
-        {scene.body && <div style={{fontSize:36,lineHeight:1.35,opacity:.82,maxWidth:1120,marginTop:30}}>{scene.body}</div>}
-      </div>
-
-      <div style={{position:'absolute',left:80,right:80,bottom:54,height:2,background:'rgba(255,255,255,.12)'}}>
-        <div style={{height:'100%',width:`${Math.min(100,(frame/Math.max(1,scene.durationInFrames-1))*100)}%`,background:accent}}/>
-      </div>
-    </AbsoluteFill>
-  );
+export const SceneRenderer: React.FC<SceneComponentProps> = (props) => {
+  const Component = ARCHETYPES[resolveArchetype(props.scene.type)];
+  return <Component {...props} />;
 };
