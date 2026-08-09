@@ -1,0 +1,29 @@
+<!--
+  NISTA mark, redrawn as vector for the launch film.
+
+  The website ships only a 512px raster whose violet/mint gradient is the one palette
+  the film's art direction excludes, and flattening that PNG on its alpha channel would
+  collapse the chevron into the hexagon and lose the mark entirely. Redrawing it lets the
+  monochrome knockout keep both forms and scale cleanly to the 72px end-frame cap height.
+
+  Geometry: regular hexagon, pointy left/right, centre (256,256), circumradius 196.
+  Both strokes inherit `currentColor` so the film can tint the mark without re-exporting.
+
+  Superseded by an official lockup file the moment one is supplied.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" width="512" height="512">
+  <polygon
+    points="452,256 354,426 158,426 60,256 158,86 354,86"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="14"
+    stroke-linejoin="round"
+    opacity="0.38"/>
+  <path
+    d="M 140 267 L 221 267 L 263 177 L 337 331"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="46"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,82 @@
+{
+  "project": "nista-launch",
+  "fps": 30,
+  "totalSeconds": 60,
+  "totalFrames": 1800,
+  "measuredSeconds": 59.949,
+  "mix": "assets/nista-launch/mix-vera.wav",
+  "beats": [
+    {
+      "id": "b1-hook",
+      "beatStart": 0,
+      "beatEnd": 4.514,
+      "speechStart": 0.3,
+      "speechEnd": 4.414,
+      "durationInFrames": 135,
+      "narration": "Some software is allowed to fail quietly. The systems you run are not."
+    },
+    {
+      "id": "b2-problem",
+      "beatStart": 4.514,
+      "beatEnd": 11.476,
+      "speechStart": 4.514,
+      "speechEnd": 11.376,
+      "durationInFrames": 209,
+      "narration": "Modernization rarely fails at the whiteboard. It fails in the distance between those who plan and those who build."
+    },
+    {
+      "id": "b3-positioning",
+      "beatStart": 11.476,
+      "beatEnd": 19.226,
+      "speechStart": 11.476,
+      "speechEnd": 19.126,
+      "durationInFrames": 233,
+      "narration": "NISTA Technologies exists to close that distance. We don't just describe technology — we design it, and we build it."
+    },
+    {
+      "id": "b4-engineers",
+      "beatStart": 19.226,
+      "beatEnd": 29.886,
+      "speechStart": 19.226,
+      "speechEnd": 29.786,
+      "durationInFrames": 320,
+      "narration": "Every engagement is designed, architected, and delivered by engineers — not staffed by intermediaries. The engineer who scopes it is the engineer who ships it."
+    },
+    {
+      "id": "b5-assurance",
+      "beatStart": 29.886,
+      "beatEnd": 38.837,
+      "speechStart": 29.886,
+      "speechEnd": 38.737,
+      "durationInFrames": 269,
+      "narration": "Availability, integrity, and recovery are first-class requirements — engineered in at the first architecture review, not bolted on before launch. Never afterthoughts."
+    },
+    {
+      "id": "b6-secure",
+      "beatStart": 38.837,
+      "beatEnd": 48.59,
+      "speechStart": 38.837,
+      "speechEnd": 48.49,
+      "durationInFrames": 293,
+      "narration": "Zero-trust posture. Hardened defaults. Secure development lifecycle — across seven engineering disciplines, from artificial intelligence to cloud and cybersecurity."
+    },
+    {
+      "id": "b7-record",
+      "beatStart": 48.59,
+      "beatEnd": 54.496,
+      "speechStart": 48.59,
+      "speechEnd": 54.396,
+      "durationInFrames": 177,
+      "narration": "Registered, active, and contract-ready — across federal, state, local, and prime programs."
+    },
+    {
+      "id": "b8-cta",
+      "beatStart": 54.496,
+      "beatEnd": 59.949,
+      "speechStart": 54.496,
+      "speechEnd": 59.716,
+      "durationInFrames": 164,
+      "narration": "NISTA Technologies. Intelligent software for mission-critical organizations. Modernize with confidence."
+    }
+  ]
+}

@@ -2,6 +2,7 @@
   "name": "claude-video-studio",
   "version": "3.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render": "tsx scripts/render.ts",

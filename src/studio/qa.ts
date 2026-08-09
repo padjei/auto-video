@@ -28,7 +28,10 @@ export function runQA(project: string, final = false) {
     const data = JSON.parse(fs.readFileSync(pj,'utf8'));
     const scenes = data.scenes ?? [];
     if (scenes.length < 3) result.major.push('Video has fewer than 3 scenes.');
-    if (!scenes.some((s:any) => s.type === 'cta')) result.major.push('No CTA scene found.');
+    // 'cta' is the legacy scene type; 'ctaLockup' is the S9 archetype (strategy §8).
+    if (!scenes.some((s:any) => s.type === 'cta' || s.type === 'ctaLockup')) {
+      result.major.push('No CTA scene found.');
+    }
     for (const s of scenes) {
       if ((s.headline ?? '').length > 90) result.minor.push(`Scene ${s.id} headline may be too long.`);
     }
