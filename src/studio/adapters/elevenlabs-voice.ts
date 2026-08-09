@@ -6,7 +6,9 @@ export class ElevenLabsVoiceAdapter implements GenerationAdapter {
     const apiKey = process.env.ELEVENLABS_API_KEY;
     if (!apiKey) return {ok:false,provider:'elevenlabs',error:'ELEVENLABS_API_KEY is missing'};
     try {
-      const voiceId = process.env.ELEVENLABS_VOICE_ID || 'JBFqnCBsd6RMkjVDRZzb';
+      // The narration plan's voiceId wins, so one project can pin a voice without
+      // changing the environment every other project shares.
+      const voiceId = request.voiceId || process.env.ELEVENLABS_VOICE_ID || 'JBFqnCBsd6RMkjVDRZzb';
       const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`,{
         method:'POST',
         headers:{'xi-api-key':apiKey,'Content-Type':'application/json'},

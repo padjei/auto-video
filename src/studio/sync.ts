@@ -20,10 +20,14 @@ export function syncProjectMedia(project:string) {
   const audioManifestPath=path.join(dir,'audio-manifest.json');
   if (fs.existsSync(audioManifestPath)) {
     const audio:any=JSON.parse(fs.readFileSync(audioManifestPath,'utf8'));
-    if (audio.voiceover) data.voiceover=audio.voiceover;
-    if (audio.backgroundMusic) data.backgroundMusic=audio.backgroundMusic;
-    data.musicVolume ??= 0.12;
-    data.voiceVolume ??= 1;
+    // The mix is the whole bed — narration and score, already balanced and ducked
+    // against each other. Mounting the score a second time would double it under
+    // the voice, so any separate music track is dropped here rather than layered.
+    const mix=audio.mix?.path ?? audio.voiceover;
+    if (mix) {
+      data.voiceover=mix;
+      delete data.music;
+    }
   }
 
   fs.writeFileSync(projectPath,JSON.stringify(data,null,2));
