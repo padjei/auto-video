@@ -45,13 +45,20 @@ Use local graphics for:
 
 `asset-plan.json` drives image/video generation.
 
-`narration.json` drives voice and music generation.
+`narration-plan.json` drives voice and music generation. It lists **beats**, one clip per
+beat — never a single narration blob. Each beat carries its spoken text, which is also
+its caption text.
 
 After generation:
 - write provenance manifests
+- measure every narration clip and assemble the mix; this writes `audio-timing.json`
+- derive scene durations and captions from that one measurement, never from word-count
+  estimates — otherwise captions drift off the words they belong to
 - sync assets into project.json
-- generate captions
 - render
+
+If the picture is already locked, fit the read to the cut with
+`scripts/conform-voice.ts` instead of re-deriving scene durations.
 
 ## QA loop
 Final delivery requires:

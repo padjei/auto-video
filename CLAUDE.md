@@ -42,7 +42,7 @@ Create before running the autonomous pipeline:
 - `projects/<slug>/storyboard.md`
 - `projects/<slug>/project.json`
 - `projects/<slug>/asset-plan.json`
-- `projects/<slug>/narration.json`
+- `projects/<slug>/narration-plan.json`
 - `projects/<slug>/production-state.json`
 
 ## Asset planning
@@ -70,15 +70,67 @@ Only assign `providerPreference: "veo"` when Vertex AI is configured.
 
 ## Narration planning
 
-`narration.json`:
+Narration is planned and rendered **one clip per beat**, never as a single blob.
+
+`narration-plan.json`:
 ```json
 {
-  "text": "Full narration...",
   "voiceProvider": "elevenlabs",
-  "musicProvider": "elevenlabs",
-  "musicPrompt": "Cinematic restrained enterprise technology score, instrumental...",
-  "durationSeconds": 60
+  "score": "assets/<slug>/score.wav",
+  "music": {
+    "provider": "elevenlabs",
+    "prompt": "Cinematic restrained enterprise technology score, instrumental...",
+    "durationSeconds": 60
+  },
+  "bedDb": 0,
+  "beats": [
+    {
+      "id": "b1-hook",
+      "narration": "Some software is allowed to fail quietly.",
+      "leadIn": 0.3,
+      "tail": 0.18
+    }
+  ]
 }
+```
+
+`narration` is both the spoken line and the caption text. `leadIn` / `tail` are the
+silence held either side of the line, in seconds. Omit `audio` and the voice adapter
+generates the clip; supply it to use a clip you already have. Omit `music` entirely and
+the score is synthesised by `scripts/make-score.ts`.
+
+### Why per-beat, and why it is not optional
+
+Three things must agree exactly: where narration sits on the timeline, where captions
+appear, and how long each scene runs. **Derive all three from one measurement** — the
+true rendered length of each beat's clip:
+
+```bash
+npm run studio:audio -- --project <slug>     # generate clips, then measure and assemble
+```
+
+This writes `audio-timing.json`, which is the authority every later stage reads.
+
+A single rendered blob gives you no interior timing, so captions can only be *estimated*
+by distributing runtime across sentences by word count. That estimate drifts, and the
+drift is invisible until someone watches the film and sees a caption land on the wrong
+line. Do not reintroduce it.
+
+Generated voices also vary in length between runs, and rate parameters are unreliable —
+generate, **measure**, and re-roll the beats that come back as outliers rather than
+trying to dial in a duration up front.
+
+### Conforming picture and voice
+
+- Picture not yet cut → derive scene durations from `audio-timing.json`.
+- Picture already locked → do **not** re-derive the timeline. Fit the read to the cut:
+  `npx tsx scripts/conform-voice.ts --project <slug> --voice <name>`.
+  Re-deriving would move every cut off the line it was cut against. This is also how
+  alternate-voice versions are produced.
+
+Legacy projects carrying the old single-blob `narration.json`:
+```bash
+npx tsx scripts/migrate-narration.ts --project <slug>
 ```
 
 ## Execution
