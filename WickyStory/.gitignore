@@ -1,0 +1,42 @@
+.DS_Store
+node_modules/
+*.log
+
+# ---------------------------------------------------------------------------
+# Generated media policy
+#
+# Track what cannot be reproduced; ignore what rebuilds. Regenerating an image
+# does not give the same image back — it gives a different one — so anything a
+# later stage was built ON TOP of has to be kept, or continuity breaks. That is
+# why keyframes and narration are tracked (as JPG / wav) while renders are not.
+#
+# See Petal Pals/ASSETS.md for what rebuilds and how.
+# ---------------------------------------------------------------------------
+
+# Full-resolution masters. The tracked JPGs under keyframes/jpg and
+# elements/designs-jpg are the reference copies.
+**/keyframes/full/
+**/keyframes/4k/
+**/keyframes/rejected/
+**/elements/designs/
+**/plates/
+
+# Generated video. Clips cost credits but are reproducible from the tracked
+# keyframe + aligned audio; renders are pure derivations.
+**/clips/
+**/out/
+
+# Rebuilds from music/make-theme.ts in seconds.
+**/music/*.wav
+
+# Raw and discarded takes. The conformed clips under vo/ are the keepers.
+**/vo/raw/
+**/vo/slow/
+**/vo/aligned/
+**/vo-tests/
+**/rerolls/
+**/vo-vera/
+**/vo-arthur/
+
+# Loose PNG masters at the keyframes root (the opening shots). JPGs are tracked.
+**/keyframes/*.png
