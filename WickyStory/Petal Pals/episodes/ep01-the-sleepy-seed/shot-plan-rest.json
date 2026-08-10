@@ -1,0 +1,373 @@
+[
+ {
+  "id": "s07",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Sunny wakes delighted - beat, no new line"
+ },
+ {
+  "id": "s08",
+  "len": 8,
+  "kind": "MOTION",
+  "vo": "vo/full/s08-sprout.wav",
+  "note": "Sprout rockets past"
+ },
+ {
+  "id": "s09",
+  "len": 3,
+  "kind": "MOTION",
+  "vo": "vo/full/s09-dew.wav",
+  "note": "Dew emerges slowly"
+ },
+ {
+  "id": "s10",
+  "len": 7,
+  "kind": "MOTION",
+  "vo": "vo/full/s10-poppy.wav",
+  "note": "Poppy: right on time"
+ },
+ {
+  "id": "s15",
+  "len": 4,
+  "kind": "PLATE",
+  "vo": null,
+  "note": "bare soil patch"
+ },
+ {
+  "id": "s16",
+  "len": 8,
+  "kind": "MOTION",
+  "vo": "vo/full/s16-sprout.wav",
+  "note": "Sprout+Dew peer at patch"
+ },
+ {
+  "id": "s17",
+  "len": 8,
+  "kind": "MOTION",
+  "vo": "vo/full/s17-dew.wav",
+  "note": "Dew's wisdom"
+ },
+ {
+  "id": "s18",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": "vo/full/s18-sprout.wav",
+  "note": "HELLO IN THERE"
+ },
+ {
+  "id": "s19",
+  "len": 4,
+  "kind": "PLATE",
+  "vo": null,
+  "note": "soil, nothing, held beat"
+ },
+ {
+  "id": "s20",
+  "len": 5,
+  "kind": "MOTION",
+  "vo": "vo/full/s20-sprout.wav",
+  "note": "knocks on dirt"
+ },
+ {
+  "id": "s21",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": "vo/full/s21-sunny.wav",
+  "note": "lovely dream"
+ },
+ {
+  "id": "s22",
+  "len": 8,
+  "kind": "MOTION",
+  "vo": "vo/full/s22-poppy.wav",
+  "note": "Poppy rallies"
+ },
+ {
+  "id": "s23",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Sprout's big idea, grabs stick"
+ },
+ {
+  "id": "s24",
+  "len": 10,
+  "kind": "MOTION",
+  "vo": "vo/full/s24-sprout.wav",
+  "note": "digs enthusiastically"
+ },
+ {
+  "id": "s25",
+  "len": 3,
+  "kind": "MOTION",
+  "vo": "vo/full/s25-dew.wav",
+  "note": "Dew: wait"
+ },
+ {
+  "id": "s26",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Sprout freezes"
+ },
+ {
+  "id": "s27",
+  "len": 7,
+  "kind": "MOTION",
+  "vo": "vo/full/s27-dew.wav",
+  "note": "cannot grow"
+ },
+ {
+  "id": "s28",
+  "len": 3,
+  "kind": "MOTION",
+  "vo": "vo/full/s28-sprout.wav",
+  "note": "...oh"
+ },
+ {
+  "id": "s29",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "pats soil back gently"
+ },
+ {
+  "id": "s30",
+  "len": 3,
+  "kind": "MOTION",
+  "vo": "vo/full/s30-sprout.wav",
+  "note": "Sorry, seed"
+ },
+ {
+  "id": "s31",
+  "len": 5,
+  "kind": "MOTION",
+  "vo": "vo/full/s31-poppy.wav",
+  "note": "kindest thing"
+ },
+ {
+  "id": "s32",
+  "len": 3,
+  "kind": "MOTION",
+  "vo": "vo/full/s32-sunny.wav",
+  "note": "being gentle IS helping"
+ },
+ {
+  "id": "s33",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Sprout sits, leaf droops"
+ },
+ {
+  "id": "s34",
+  "len": 7,
+  "kind": "MOTION",
+  "vo": "vo/full/s34-sprout.wav",
+  "note": "what if it never wakes"
+ },
+ {
+  "id": "s35",
+  "len": 6,
+  "kind": "MOTION",
+  "vo": "vo/full/s35-sunny.wav",
+  "note": "wait together"
+ },
+ {
+  "id": "s36",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Poppy claps, work begins"
+ },
+ {
+  "id": "s37",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Sunny folds leaf"
+ },
+ {
+  "id": "s38",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Poppy tips dew-drop"
+ },
+ {
+  "id": "s39",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Dew sets stone"
+ },
+ {
+  "id": "s40",
+  "len": 5,
+  "kind": "MOTION",
+  "vo": "vo/full/s40-poppy.wav",
+  "note": "care song 1"
+ },
+ {
+  "id": "s41",
+  "len": 3,
+  "kind": "MOTION",
+  "vo": "vo/full/s41-sunny.wav",
+  "note": "care song 2"
+ },
+ {
+  "id": "s42",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": "vo/full/s42-sprout.wav",
+  "note": "care song 3"
+ },
+ {
+  "id": "s43",
+  "len": 5,
+  "kind": "MOTION",
+  "vo": "vo/full/s43-poppy.wav",
+  "note": "care song 4"
+ },
+ {
+  "id": "s44",
+  "len": 4,
+  "kind": "PLATE",
+  "vo": null,
+  "note": "light shifts, half-circle wait"
+ },
+ {
+  "id": "s45",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Sunny hums, Dew droops"
+ },
+ {
+  "id": "s46",
+  "len": 15,
+  "kind": "MOTION",
+  "vo": "vo/full/s46-poppy.wav",
+  "note": "to camera: help us wait"
+ },
+ {
+  "id": "s47",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "breathing beat - garden swells"
+ },
+ {
+  "id": "s48",
+  "len": 8,
+  "kind": "MOTION",
+  "vo": "vo/full/s48-poppy.wav",
+  "note": "one more breath"
+ },
+ {
+  "id": "s49",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "soil shifts, Sprout gasps"
+ },
+ {
+  "id": "s50",
+  "len": 3,
+  "kind": "MOTION",
+  "vo": "vo/full/s50-sprout.wav",
+  "note": "shoot pushes up"
+ },
+ {
+  "id": "s51",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": "vo/full/s51-sunny.wav",
+  "note": "take your time"
+ },
+ {
+  "id": "s52",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Pals hum, shoot unfurls"
+ },
+ {
+  "id": "s53",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": "vo/full/s53-petunia.wav",
+  "note": "Petunia: I grew!"
+ },
+ {
+  "id": "s54",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "everyone gasps, backflip"
+ },
+ {
+  "id": "s55",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Dew raises eye-stalk"
+ },
+ {
+  "id": "s56",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": "vo/full/s56-petunia.wav",
+  "note": "asleep a long time?"
+ },
+ {
+  "id": "s57",
+  "len": 9,
+  "kind": "MOTION",
+  "vo": "vo/full/s57-sprout.wav",
+  "note": "patient and gentle"
+ },
+ {
+  "id": "s58",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": "vo/full/s58-poppy.wav",
+  "note": "welcome to Sunnydew"
+ },
+ {
+  "id": "s59",
+  "len": 4,
+  "kind": "MOTION",
+  "vo": null,
+  "note": "Wish-Bloom first leaf - STAGE 2"
+ },
+ {
+  "id": "s60",
+  "len": 3,
+  "kind": "MOTION",
+  "vo": "vo/full/s60-sprout.wav",
+  "note": "Sprout's 2nd leaf"
+ },
+ {
+  "id": "s61",
+  "len": 8,
+  "kind": "MOTION",
+  "vo": "vo/full/s61-narr.wav",
+  "note": "narrator: kindness helps things bloom"
+ },
+ {
+  "id": "s62",
+  "len": 8,
+  "kind": "MOTION",
+  "vo": "vo/full/s62-poppy.wav",
+  "note": "grey cloud, raindrop"
+ },
+ {
+  "id": "s63",
+  "len": 13,
+  "kind": "MOTION",
+  "vo": "vo/full/s63-poppy.wav",
+  "note": "to camera + title card"
+ }
+]

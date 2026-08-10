@@ -1,0 +1,485 @@
+{
+  "_comment": "Ep01 'The Sleepy Seed' — image prompts for the 53 remaining shots. Characters are referenced ONLY by Element id in <<<...>>> form; never describe a character's design here or it will fight the locked Element. styleSuffix is appended to every prompt by the generator.",
+  "shared": {
+    "styleSuffix": "Style: bright glossy 3D cartoon, soft rounded shapes, thick clean dark outlines, big expressive eyes, appealing exaggerated toddler-show proportions, warm sunshine, lush candy-colored garden, sparkling dewdrops, gentle bloom and sparkle, soft global illumination, wholesome cozy toddler aesthetic, high-end 3D animation studio quality, ultra high detail, 4K. Negative: no text, no lettering, no numbers, no watermark, no logos, no signage, no subtitles or captions, no music notes, no extra characters, no duplicate figures, no background crowds, no photorealism, no dark or scary imagery, no harsh shadows, no motion blur."
+  },
+  "shots": [
+    {
+      "id": "s07",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — head-and-shoulders, camera at his eye level, face filling roughly half the frame width, slightly low angle",
+      "characters": ["sunny"],
+      "prompt": "<<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> is slumped sideways against a small red white-spotted mushroom cap on the sunlit path just outside the toadstool cottage, having gently bonked into it a moment ago. He is at the very START of waking up: eyelids only just lifting, one eye a sleepy slit and the other beginning to widen, a dozy little smile starting to turn into pure delight, a soft puff of settling dust and a few floating sparkles around him. His wings are still folded and drowsy, not yet buzzing. Behind him, softly out of focus, the base of the red white-spotted toadstool cottage and its round arched wooden door. Low golden morning sunrise light rakes in from the left, warm rim light on his fuzz, long soft warm shadows. Camera is low, at his eye height, close enough that every mouth and eyebrow movement will read clearly."
+    },
+    {
+      "id": "s08",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — chest-up, face large and centered, camera low at his eye height",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> has just rocketed out of the toadstool cottage doorway and is caught at the very top of an excited bounce on the sunny path, knees tucked, both little arms flung up, body tilted eagerly toward camera. His eyes are huge and sparkling with impatient excitement, eyebrows high, mouth just beginning to open to shout a question straight at us. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — and it is whipping backward from the speed. Small puffs of dust and a spray of loose flower petals kick up under him. Behind him, softly defocused, the red white-spotted toadstool cottage with its round arched wooden door and round window. Low warm golden sunrise light from the left, long gentle shadows, sparkles in the air. Camera is low and close so his face fills the frame and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s09",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — camera down at ground level, his face large in the left half of frame",
+      "characters": ["dew"],
+      "prompt": "<<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> is emerging from the arched wooden doorway of the toadstool cottage extremely slowly, only about one snail-length out over the little stone doorstep, the rest of him still inside the warm glowing doorway. He is perfectly serene and unhurried, eye-stalks lifted and pointing gently forward, a small calm smile beginning to form as his mouth just starts to open to speak. A glistening trail catches the light behind him on the stone. Camera is placed right down at ground level so we are eye-to-eye with him, close enough that his face and mouth read clearly for lip sync. Low warm golden sunrise light spilling from the left, soft warm glow from inside the doorway, sparkles in the air, long gentle morning shadows."
+    },
+    {
+      "id": "s10",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Poppy chest-up and dominant, camera low, Dew small and softly out of focus at the lower frame edge",
+      "characters": ["poppy", "dew"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> is crouched down on the sunny path in front of the toadstool cottage, leaning warmly toward the ground with both hands on her knees, head tipped affectionately to one side, eyes soft and crinkled with fondness, mouth just beginning to open to greet someone. She fills most of the frame. In the lower left corner, small and softly out of focus in the foreground, <<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> is barely out of the cottage doorway, calm and unhurried. Behind them the red white-spotted toadstool cottage is defocused. Low warm golden sunrise light from the left, warm rim light, floating sparkles, long soft morning shadows. Camera is low, at crouching height, close enough that Poppy's face and mouth read clearly for lip sync."
+    },
+    {
+      "id": "s15",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM WIDE plate — no characters, camera low and level with the soil, the patch centered",
+      "characters": [],
+      "prompt": "The Flowerbed in Sunnydew Garden with absolutely no characters present: a small round patch of bare, smooth, gently domed brown soil, freshly raked and completely undisturbed, with one tiny bare twig pushed in upright at its center as a marker. The patch is ringed by lush candy-colored cartoon flowers in pink, yellow, blue and lilac, soft green grass and a few sparkling dewdrops on the blades. Nothing is growing in the soil. The frame is quiet, still and patient — an empty stage that reads as WAITING, with a little breathing room of open soil at the center. A single small white butterfly-free empty sky and rolling flower-hills soft and defocused behind. Low warm golden morning sunrise light from the left, long soft shadow cast by the little marker twig across the soil, gentle floating pollen sparkles. Camera is low, almost level with the soil surface, calm and locked off."
+    },
+    {
+      "id": "s16",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE two-shot — Sprout large in the left foreground facing three-quarter toward camera, Dew smaller behind at right, camera at soil level",
+      "characters": ["sprout", "dew"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> is crouched over the little patch of bare brown soil at the Flowerbed, hands on his knees, leaning in to peer down at it with worried curious eyes and a small anxious frown, head turned three-quarter toward camera, mouth just beginning to open to ask a question. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. Just behind him at the right, smaller and calm, <<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> also regards the patch serenely, eye-stalks tipped down toward the soil. Between them the bare domed soil with its one upright tiny twig marker, nothing growing. Candy-colored garden flowers and dewy grass ring the patch. Low warm golden morning light from the left, long soft shadows, floating sparkles. Camera is low at soil level so Sprout's face is large in frame and his mouth reads clearly for lip sync."
+    },
+    {
+      "id": "s17",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Dew's head and shell filling most of the frame, camera down at soil level",
+      "characters": ["dew"],
+      "prompt": "<<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> is at the edge of the bare soil patch in the Flowerbed, turned three-quarter toward camera, both eye-stalks raised and tilted gently and kindly toward us, a slow warm reassuring smile, mouth just beginning to open to speak softly. He fills most of the frame. The bare brown soil and its tiny upright twig marker are visible soft and defocused behind him, still with nothing growing. Candy-colored flowers and dewy grass blur the frame edges. Low warm golden morning light from the left glows through the pearly sheen of his shell, floating sparkles, long soft shadows. Camera is right down at soil level, close and intimate, so his face and mouth read clearly for lip sync."
+    },
+    {
+      "id": "s18",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sprout's head and shoulders filling the frame in three-quarter profile, camera at soil level",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> is down on his hands and knees with his face lowered very close to the bare brown soil of the Flowerbed, both little hands cupped around his mouth like a megaphone, eyes squeezed wide with hopeful mischief, eyebrows up, mouth just beginning to open into a big loud-whisper shape aimed at the dirt. His head is turned three-quarter so we clearly see his mouth. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — sticking up and quivering with effort. The tiny upright twig marker is beside him; the soil is undisturbed and nothing is growing. Low warm golden morning light from the left, long soft shadows, floating sparkles. Camera is right down at soil level, very close, so his face fills the frame and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s19",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE plate — no characters, macro on the soil surface, camera almost touching the ground",
+      "characters": [],
+      "prompt": "An intimate close plate of the bare soil patch at the Flowerbed with absolutely no characters present: smooth, gently domed brown cartoon soil filling the frame, individual soft crumbs and tiny pebbles catching the light, the one tiny bare twig marker standing upright and perfectly still. Nothing is happening. Nothing is growing. A single dewdrop rests on a crumb of earth, glinting. A few blades of dewy grass and a soft blur of candy-colored petals frame the edges. The shot is deliberately empty and expectant — a held beat that reads as WAITING for something that has not come. Low warm golden morning light from the left, the twig's long thin shadow lying across the soil, a slow drift of golden pollen motes. Camera is almost touching the ground, locked off and completely still."
+    },
+    {
+      "id": "s20",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sprout head-and-shoulders, three-quarter to camera, camera at soil level",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> kneels beside the bare soil patch at the Flowerbed and raises one small curled fist just above the dirt, about to knock politely on it like a little door. His other hand rests on his knee. His expression is puzzled and gently deflating — eyebrows tilted up in the middle, a small unsure mouth just beginning to open to speak quietly. Head turned three-quarter toward camera so his mouth is fully visible. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — drooping slightly. The soil is undisturbed with its tiny upright twig marker; nothing is growing. Low warm golden morning light from the left, long soft shadows, floating sparkles. Camera is low at soil level and close, so his face is large and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s21",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sunny head-and-shoulders, hovering just above the soil, camera at his eye height",
+      "characters": ["sunny"],
+      "prompt": "<<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> hovers gently just above the bare soil patch at the Flowerbed, wings a soft translucent blur, both little hands clasped together under his chin in a dreamy, tender way. His eyes are half-closed and blissful, head tilted, cheeks rosy, mouth just beginning to open to say something soft and kind. He fills most of the frame, turned three-quarter toward camera. Below and behind him the undisturbed brown soil and its tiny upright twig marker, softly defocused, nothing growing. Low warm golden morning light from the left, warm rim light on his fuzz, floating golden sparkles and a couple of drifting petals. Camera is at his hovering eye height, close, so his face and mouth read clearly for lip sync."
+    },
+    {
+      "id": "s22",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM — Poppy from the knees up, centered and dominant, camera slightly low looking up at her",
+      "characters": ["poppy"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> stands beside the bare soil patch at the Flowerbed, planted confidently with feet apart, one fist raised and beginning to punch up into the air in a bright rallying gesture, the other hand on her hip. Her eyes are shining with determination and warmth, eyebrows up, a big encouraging smile with her mouth just beginning to open to call out to her friends. She is centered and dominant in frame. Behind and below her the bare domed soil with its tiny upright twig marker, softly defocused, and rolling candy-colored flower-hills beyond. Low warm golden morning light from behind her left shoulder giving a bright rim light, floating sparkles, long soft shadows. Camera is slightly low, looking up at her heroically but gently, close enough that her face and mouth read clearly for lip sync."
+    },
+    {
+      "id": "s23",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM — Sprout from the waist up, centered, camera at his eye height",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> at the Flowerbed has just had a big idea: his eyes go enormous and bright, eyebrows shot up, mouth a delighted little O, one finger raised in a lightbulb moment while his other hand is just closing around the tiny twig marker to pull it out of the soil. His whole body leans forward with eager mischief, feet already shifting to spring into action. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — springing upright with excitement. The bare brown soil patch is in front of him, still undisturbed. Low warm golden morning light from the left, a small sparkle pop above his head, long soft shadows. Camera at his eye height, close enough to read his whole expressive face."
+    },
+    {
+      "id": "s24",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Sprout chest-up, three-quarter to camera, camera low at soil level",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> kneels at the bare soil patch of the Flowerbed gripping the little twig in both hands and raising it back over his shoulder, at the very START of an enthusiastic dig — the soil in front of him is still almost untouched, only one small scrape and a few loose crumbs so far. His eyes are bright and busy with helpful determination, tongue-tip of concentration, mouth just beginning to open to announce his plan. Head turned three-quarter toward camera so his mouth is clearly visible. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. Little puffs of dust and flying crumbs of earth around his hands. Low warm golden morning light from the left, long soft shadows, floating sparkles. Camera low at soil level and close, so his face is large and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s25",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Dew's face filling the frame, camera at soil level",
+      "characters": ["dew"],
+      "prompt": "<<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> is turned to face camera three-quarter at the edge of the Flowerbed, both eye-stalks stretching up and forward with quiet gentle concern, brows soft, no anger at all — only kindness. His mouth is just beginning to open to say one soft calm word. He fills most of the frame. Behind him, blurred, the disturbed soil patch with a small scrape and scattered crumbs of earth. Low warm golden morning light from the left glowing through his pearly shell, floating sparkles. Camera right down at soil level, close and intimate, so his face and mouth read clearly for lip sync."
+    },
+    {
+      "id": "s26",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM — Sprout full upper body with the raised stick included in frame, camera at his eye height",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> is frozen mid-dig at the Flowerbed, the little twig still held high above his head in both hands, arms locked in place, one knee up. His whole body has stopped hard: eyes wide and blinking, eyebrows lifted in caught-out surprise, mouth in a small silent O, head starting to turn back over his shoulder toward whoever spoke. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — stopped mid-bounce and standing up straight. Below him the scraped soil patch with a small hollow and loose crumbs, a puff of dust still hanging in the air. Low warm golden morning light from the left, long soft shadows. Camera at his eye height, framed to include the raised stick at the top of frame."
+    },
+    {
+      "id": "s27",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Dew's face filling the frame, camera at soil level, slight push-in framing",
+      "characters": ["dew"],
+      "prompt": "<<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> is close to camera at the Flowerbed, eye-stalks lowered to a warm level gaze directly toward the person he is speaking to, a patient teacherly softness in his round eyes, a small gentle smile, mouth just beginning to open to explain something slowly and kindly. His face and the front of his pearly shell fill most of the frame. Behind him, blurred and warm, the scraped soil patch and dewy candy-colored flowers. Low warm golden morning light from the left, iridescent highlights on his shell, floating sparkles. Camera right down at soil level, very close, so mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s28",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sprout's head and shoulders, centered and small-feeling in the frame, camera at his eye height",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> has lowered the little twig to his side and gone very quiet. His shoulders have dropped, his eyes are wide and glassy with dawning understanding, eyebrows tilted up in the middle, cheeks warm, mouth just beginning to open on a tiny soft 'oh'. He is not distressed — only small and thoughtful. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — and it has wilted over to one side. Blurred behind him the scraped soil patch and dewy garden flowers. Low warm golden morning light from the left, soft and forgiving, floating sparkles. Camera at his eye height, close, so his face fills the frame and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s29",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — over-the-hands framing, Sprout's hands and lowered face in frame, camera low and level with the soil",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> kneels at the Flowerbed with the twig set aside and both little hands hovering just above the small hollow he dug, palms open and flat, at the very START of pushing the loose crumbs of earth carefully back into place. He is looking down at the soil with tender apologetic care, eyes soft, brows up, mouth closed in a small serious line of concentration. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — drooping forward over his brow. The soil in front of him is still scraped and uneven, waiting to be smoothed. Low warm golden morning light from the left, warm bounce light on his hands, floating sparkles. Camera low, level with the soil, framed so both his hands and his lowered face are clearly visible."
+    },
+    {
+      "id": "s30",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sprout head-and-shoulders in three-quarter profile above the smoothed soil, camera low at soil level",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> kneels over the now smoothed and patted-flat soil patch at the Flowerbed, one small hand resting gently and protectively on the surface, the tiny twig marker pushed back upright beside it. His head is turned three-quarter toward camera and tipped down, eyes warm and apologetic, brows up in the middle, mouth just beginning to open to whisper a small sorry. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. The soil is neat and undisturbed again. Low warm golden morning light from the left, soft warm bounce on his face, a few floating sparkles settling. Camera low at soil level and close, so his face is large and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s31",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Poppy head-and-shoulders, three-quarter to camera, camera at her crouching eye height",
+      "characters": ["poppy"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> is crouched down close beside the smoothed soil patch at the Flowerbed, one hand lifting to reach out reassuringly toward her friend just off frame. Her head is tipped kindly, eyes shining and proud and very soft, eyebrows warm, a gentle encouraging smile with her mouth just beginning to open to speak. Her face fills most of the frame in three-quarter view. Behind her, blurred, dewy candy-colored garden flowers and the rolling flower-hills. Low warm golden morning light from the left, warm rim light along her cheek, floating sparkles. Camera at her crouching eye height, close, so her face and mouth read clearly for lip sync."
+    },
+    {
+      "id": "s32",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sunny head-and-shoulders, hovering low, camera at his eye height",
+      "characters": ["sunny"],
+      "prompt": "<<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> hovers low and close beside the smoothed soil patch at the Flowerbed, wings a soft translucent blur, one little hand pressed warmly to his own chest in a simple heartfelt gesture. His eyes are kind and crinkled, head tilted, cheeks rosy, a gentle certain smile with his mouth just beginning to open to say something simple and true. His face fills most of the frame. Blurred warm garden greens and candy-colored petals behind him. Low warm golden morning light from the left, glowing rim light through his fuzz, floating golden sparkles. Camera at his hovering eye height, close, so his face and mouth read clearly for lip sync."
+    },
+    {
+      "id": "s33",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM — Sprout full body seated, small in a wide-ish warm frame, camera at his seated eye height",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> has just sat down heavily on the grass beside the smoothed soil patch at the Flowerbed, legs out in front of him, elbows on his knees and chin sinking into both cupped hands. He gazes wistfully at the soil, eyes big and soft and faraway, eyebrows tilted up, mouth a small closed quiet line — thoughtful and a little discouraged, gentle and never upset or crying. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — and it droops sadly forward over his face. The tiny twig marker stands in the neat soil beside him. Low warm golden morning light from the left, long soft comforting shadows, slow floating pollen sparkles, warm and cozy. Camera at his seated eye height, framing him small and cozy within the soft candy-colored garden."
+    },
+    {
+      "id": "s34",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sprout head-and-shoulders, face large and centered, camera at his seated eye height",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> sits with his chin in his hands at the Flowerbed, now framed close so his face fills most of the frame. He is looking slightly up and off past camera with big wistful glistening eyes, eyebrows tilted up in the middle, mouth just beginning to open to ask a quiet worried question. The mood is wistful and tender, never distressed — no tears. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — drooping over his brow. Blurred warm garden greens, the smoothed soil patch and its tiny twig marker behind him. Low warm golden morning light from the left, soft glow, floating sparkles. Camera at his seated eye height, close, so his mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s35",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE two-shot — both seated shoulder to shoulder, Sunny's face nearer camera and slightly larger, camera at their seated eye height",
+      "characters": ["sunny", "sprout"],
+      "prompt": "<<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> has just settled down on the grass beside <<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> at the Flowerbed and is leaning in so their shoulders touch. Sunny is nearer camera on the right, turned three-quarter toward us, eyes warm and half-closed with affection, mouth just beginning to open to say something comforting. Sprout on the left still has his chin in his hands, looking down, beginning to turn his head toward Sunny with a small flicker of hope. IMPORTANT: Sprout has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. The smoothed soil patch with its tiny twig marker sits just beyond them. Low warm golden morning light from the left, long soft shadows joining into one, floating sparkles, deeply cozy. Camera at their seated eye height, close enough that Sunny's mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s36",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM WIDE group shot — all four together around the soil patch, Poppy dominant in the center foreground, camera low at soil level",
+      "characters": ["poppy", "sunny", "sprout", "dew"],
+      "prompt": "At the Flowerbed, <<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> stands center frame with her hands just coming together at the start of a bright decisive clap, beaming, eyes sparkling, chin up, ready to set everyone to work. Around her, at the START of springing into action: <<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> hovers up and to the right with his wings buzzing and arms lifting eagerly; <<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> is on the left scrambling up off the grass with new energy, eyes bright again; <<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> is at the lower right beginning to turn, unhurried and serene. IMPORTANT: Sprout has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. The smoothed soil patch with its tiny upright twig marker is in the near foreground. Low warm golden morning light from the left, long soft shadows, a burst of floating sparkles. Camera low at soil level so all four read clearly with the patch in frame."
+    },
+    {
+      "id": "s37",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM — Sunny from the waist up at the left, the big leaf and the soil patch in frame, camera low at soil level",
+      "characters": ["sunny"],
+      "prompt": "<<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> hovers at the left of frame beside a big glossy green garden leaf that overhangs the soil patch at the Flowerbed, both little hands gripping its edge and just beginning to fold it back out of the way. His wings are a soft blur, his face is bright with cheerful effort, tongue-tip of concentration, cheeks rosy. Where the leaf has begun to lift, the first sliver of a warm golden shaft of sunshine is starting to reach the bare brown soil and its tiny upright twig marker. Sparkling dust motes float in the new beam. Low warm golden morning light from the left, long soft shadows, dewdrops glinting on the leaf. Camera low at soil level, framed so both Sunny and the lit soil patch read clearly."
+    },
+    {
+      "id": "s38",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM — Poppy from the knees up, centered, the dew-drop and soil patch in frame, camera low at soil level",
+      "characters": ["poppy"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> stands at the edge of the soil patch in the Flowerbed carrying a big sparkling crystal-clear dewdrop of water in both arms, hugged against her chest, about the size of her own head, refracting little rainbows. She is at the very START of tipping it — her arms only just beginning to angle forward, no water spilled yet — with a careful delighted expression, eyes bright and focused, tongue-tip of concentration, a happy smile. Below her the bare brown soil with its tiny upright twig marker, waiting. Low warm golden morning light from the left blazing through the dewdrop into caustic sparkles on the soil, long soft shadows, floating glitter. Camera low at soil level so both Poppy and the patch are clearly readable."
+    },
+    {
+      "id": "s39",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Dew and the little stone filling the lower half of frame, camera right down at soil level",
+      "characters": ["dew"],
+      "prompt": "<<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> is beside the soil patch at the Flowerbed with a small smooth round pebble, freshly polished to a soft shine, resting in front of him. He is at the START of nudging it carefully into its final place beside the patch, head lowered toward it, eye-stalks angled down with quiet fussy pride, a serene contented smile. The little stone gleams with a fresh polished highlight and a tiny sparkle. Beyond it the smoothed brown soil and its tiny upright twig marker. Low warm golden morning light from the left, iridescent shimmer across his shell, dewdrops on the surrounding grass, floating sparkles. Camera right down at soil level, close, warm and tender."
+    },
+    {
+      "id": "s40",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Poppy head-and-shoulders, three-quarter to camera, camera at her eye height",
+      "characters": ["poppy"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> is singing at the Flowerbed: head tipped happily back, eyes closed in a joyful crinkle, cheeks lifted and rosy, one hand raised in a soft conducting flourish, mouth just beginning to open on the first sung note. Her face fills most of the frame in three-quarter view. Behind her, softly defocused, the soil patch, a sparkling dewdrop and dewy candy-colored garden flowers. Warm musical sparkle motes drift around her — glowing dots and little starbursts only, absolutely no musical note symbols. Low warm golden morning light from the left, glowing rim light, floating glitter. Camera at her eye height, close, so her mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s41",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sunny head-and-shoulders, hovering, camera at his eye height",
+      "characters": ["sunny"],
+      "prompt": "<<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> hovers over the Flowerbed singing his line, wings a soft blur, both little hands spread happily wide, eyes closed in blissful crinkles, head swaying, mouth just beginning to open on a sung note. His face fills most of the frame. Behind him the golden shaft of sunshine falling onto the soil patch, softly defocused, with dewy candy-colored flowers. Warm sparkle motes and glowing dots drift around him — sparkles only, absolutely no musical note symbols. Low warm golden morning light from the left, glowing rim light through his fuzz. Camera at his hovering eye height, close, so his mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s42",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sprout head-and-shoulders leaning over the soil, three-quarter to camera, camera low at soil level",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> is leaning down very close to the smoothed soil patch at the Flowerbed with both hands resting gently on the earth, singing his line very softly right to the sleeping seed. His eyes are closed in a tender crinkle, eyebrows soft, head tipped, mouth just beginning to open on a small sweet sung note. Head turned three-quarter toward camera so his mouth is clearly visible. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — swaying gently in time. Beside him the polished pebble and the tiny upright twig marker; a golden shaft of sunshine warms the soil. Sparkle motes and glowing dots drift in the beam — sparkles only, absolutely no musical note symbols. Low warm golden morning light from the left. Camera low at soil level, close, so his mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s43",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Poppy from the waist up, arms opening wide, camera slightly low",
+      "characters": ["poppy"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> finishes the care song at the Flowerbed: she is at the START of throwing both arms wide open in a big joyful flourish, chest lifted, head back, eyes shining, radiant beaming smile with her mouth just beginning to open on the final sung line. Behind her the cared-for soil patch glows in its golden sunbeam with the polished pebble and tiny twig marker beside it, and the rolling candy-colored flower-hills sparkle beyond. Warm sparkle motes and glowing dots swirl up around her — sparkles only, absolutely no musical note symbols. This is the last shot of warm low morning light: strong golden sun from the left, long soft shadows. Camera slightly low, close enough that her face and mouth read clearly for lip sync."
+    },
+    {
+      "id": "s44",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "WIDE plate — the four seen small from behind and in profile in a half-circle around the soil patch, camera low and locked off",
+      "characters": ["poppy", "sunny", "sprout", "dew"],
+      "prompt": "A still, patient wide plate of the Flowerbed. <<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>>, <<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>>, <<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> and <<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> are sitting quietly in a little half-circle around the smoothed soil patch, seen small and mostly from behind and in profile, no faces toward camera, all completely still and simply waiting. Poppy sits at the left, Sunny settled on the grass beside her, Sprout at the right with his chin in his hands, Dew lowest and nearest the patch with the polished pebble. IMPORTANT: Sprout has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. The soil is neat and undisturbed with its tiny upright twig marker; nothing is growing yet. THE LIGHT HAS CHANGED: the sun is now much higher, brighter clearer midday sunshine falling from almost overhead, shadows short and soft, the garden fully lit and warm rather than low golden sunrise. Slow floating pollen motes. Camera low, wide, locked off and completely still, the whole frame reading as gentle patient waiting."
+    },
+    {
+      "id": "s45",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM two-shot — Sunny at the left and Dew at the right, both in profile, camera low at soil level",
+      "characters": ["sunny", "dew"],
+      "prompt": "Still waiting at the Flowerbed. <<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> sits on the grass at the left, swaying gently side to side with his eyes closed and cheeks puffed in a contented closed-mouth hum, hands folded in his lap. At the right, <<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> is at the START of drowsing: both eye-stalks upright but beginning to tip and sag, eyes heavy-lidded and serene. Between them the smoothed soil patch with its tiny upright twig marker and the polished pebble, still nothing growing. Sun high overhead: bright clear midday sunshine, short soft shadows, warm and drowsy. Slow floating pollen motes and a couple of drifting petals. Camera low at soil level, both characters comfortably in frame, cozy and unhurried."
+    },
+    {
+      "id": "s46",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Poppy from the chest up, dead centre, facing camera fully, direct eye contact with the viewer, camera at her eye height",
+      "characters": ["poppy"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> turns and addresses the viewer directly at the Flowerbed. She is centered, facing fully front, looking straight into the lens with warm sparkling eye contact, one hand just beginning to lift to rest on her own chest ready to demonstrate a big slow breath, the other open in gentle invitation. Her expression is calm, encouraging and inviting, mouth just beginning to open to speak to us. Her face is large and clearly readable. Behind her, softly defocused and symmetrical, the soil patch, dewy candy-colored garden flowers and the rolling flower-hills under a big blue sky with fluffy white clouds. Sun high overhead: bright clear midday sunshine, short soft shadows, gentle sparkles in the air. Camera at her eye height, close and frontal, so her mouth movement reads perfectly for lip sync."
+    },
+    {
+      "id": "s47",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "WIDE landscape breathing beat — no characters, camera high and slow, the whole garden in frame",
+      "characters": [],
+      "prompt": "A wide, calm, breathing beat of Sunnydew Garden with absolutely no characters present: rolling candy-colored flower-hills in pink, yellow, lilac and blue stretching away under a big bright blue sky with soft fluffy white clouds, a winding pale petal-path threading between them, everything dewy and sparkling. Every flower is caught at the START of a gentle inhale — petals just beginning to lift and open, grass just beginning to sway, a soft swell of golden pollen motes and glitter rising from the hills as though the whole garden is quietly breathing in together. Serene, spacious and restful. Sun high overhead: bright clear midday sunshine, short soft shadows, warm and luminous. Camera is high and wide, drifting slowly, the horizon low so the sky fills the upper third."
+    },
+    {
+      "id": "s48",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Poppy head-and-shoulders, dead centre, facing camera fully with direct eye contact, slightly tighter than s46, camera at her eye height",
+      "characters": ["poppy"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> is still speaking straight to the viewer at the Flowerbed, framed a little tighter than before: centered, fully front-on, looking directly into the lens, one hand resting on her own chest, shoulders just beginning to rise at the start of another big slow breath. Her eyes are warm and delighted, brows lifted encouragingly, mouth just beginning to open to speak to us again. Her face is large and dominant in frame. Behind her, softly defocused, the soil patch and dewy candy-colored garden flowers under a blue sky. Sun high overhead: bright clear midday sunshine, short soft shadows, gentle floating sparkles. Camera at her eye height, close and frontal, so her mouth movement reads perfectly for lip sync."
+    },
+    {
+      "id": "s49",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — the soil filling the lower two-thirds of frame, Sprout's face large at the top of frame looking down, camera right down at soil level",
+      "characters": ["sprout"],
+      "prompt": "A close low shot of the smoothed soil patch at the Flowerbed filling the lower two thirds of the frame, with the tiny upright twig marker and the polished pebble beside it. A single crumb of earth has just tipped and a hairline crack is beginning to open in the surface — nothing has emerged yet, only the very first movement. Above and behind, filling the top of the frame, <<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> leans in with his face large and his eyes flying wide, both hands clapped over his mouth at the start of an amazed gasp, eyebrows shot up. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair — springing bolt upright with shock. Sun high overhead: bright clear midday sunshine, short soft shadows, a scatter of tiny sparkles above the crack. Camera right down at soil level, close and breathless."
+    },
+    {
+      "id": "s50",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sprout's face large at the left, the tiny shoot sharp in the right foreground, camera right down at soil level",
+      "characters": ["sprout"],
+      "prompt": "At the Flowerbed a tiny pale-green shoot, no taller than a thumb, has just begun to push up through the crack in the soil — still very small, still tightly curled at its tip, wobbling and shy, with crumbs of earth pushed aside around it. It sits sharp in the right foreground. At the left, close and large in frame, <<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> is frozen with wonder, barely breathing, eyes enormous and shining, hands hovering near his cheeks, mouth just beginning to open to whisper. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. Sun high overhead: bright clear midday sunshine, short soft shadows, a halo of tiny golden sparkles around the new shoot. Camera right down at soil level, close, so Sprout's mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s51",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sunny head-and-shoulders at the right, the little shoot small and soft in the left foreground, camera at soil level",
+      "characters": ["sunny"],
+      "prompt": "<<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> has floated down very low and close to the tiny curled green shoot at the Flowerbed, hovering with his wings a soft slow blur, one little hand extended gently toward it without touching, the other on his chest. His face fills the right side of the frame, eyes soft and encouraging, brows tender, a patient reassuring smile with his mouth just beginning to open to speak gently. In the left foreground, small and slightly soft, the shy half-curled shoot leans hesitantly, still tightly furled. Sun high overhead: bright clear midday sunshine, short soft shadows, tiny golden sparkles drifting between them. Camera at soil level, close, so his mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s52",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — the shoot centered and low in frame, the Pals ringed around it soft and defocused, camera right down at soil level",
+      "characters": ["petunia", "poppy", "sunny", "sprout"],
+      "prompt": "At the Flowerbed the shy little shoot is centered and low in frame, only just beginning to unfurl: <<<dd220299-0254-4811-8942-6092d68e1ea2>>> is emerging from the soil at the very START of opening — barely cresting the earth, small and still mostly furled with her petals folded closed around her, only the very top of her showing, eyes still shut, curling open a fraction. Do not show her fully opened. Ringed around her, leaning in close but softly out of focus at the frame edges, <<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>>, <<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> and <<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> hum together with their eyes closed and mouths gently rounded in a soft closed hum, hands clasped. IMPORTANT: Sprout has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. Warm sparkle motes and glowing dots swirl inward toward the shoot — sparkles only, absolutely no musical note symbols. Sun high overhead: bright clear midday sunshine, short soft shadows, a soft golden glow blooming around the shoot. Camera right down at soil level, close and hushed."
+    },
+    {
+      "id": "s53",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Petunia centered and filling most of the frame, camera right down at soil level looking slightly up at her",
+      "characters": ["petunia"],
+      "prompt": "<<<dd220299-0254-4811-8942-6092d68e1ea2>>> has just unfurled from the soil at the Flowerbed and fills most of the frame, centered on her little stem in the smoothed brown soil with crumbs of earth still around her base. She is at the START of her very first moment awake: eyes just blinking open into the sunshine, still a bit sleepy, one eye squinting against the light, cheeks rosy, a tiny giggly smile with her mouth just beginning to open to speak in a small sleepy-happy voice. She sways very slightly, still finding her balance. The tiny twig marker and the polished pebble sit softly out of focus beside her. Sun high overhead: bright clear midday sunshine, short soft shadows, a warm halo of golden sparkles drifting around her. Camera right down at soil level looking slightly up at her, close, so her face is large and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s54",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM WIDE — group reaction, all four in frame with Petunia small in the near foreground, camera low at soil level",
+      "characters": ["sprout", "poppy", "sunny", "petunia"],
+      "prompt": "A joyful group reaction at the Flowerbed. <<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> is center-right at the very START of a backflip — knees deeply bent, arms swinging down and back, body just beginning to spring upward off the grass, face split with an enormous delighted grin, a little dust puff under his feet. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. At the left, <<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> has both hands flying to her cheeks, eyes and mouth wide in a gasp of pure joy. Above her, <<<640cc3ce-87df-4a58-86fb-9872c1ef377a>>> pops upward with his wings buzzing hard and arms thrown up. Small in the near foreground and slightly out of focus, <<<dd220299-0254-4811-8942-6092d68e1ea2>>> stands in the soil looking up at all the fuss. Sun high overhead: bright clear midday sunshine, short soft shadows, a burst of golden confetti sparkles in the air. Camera low at soil level, wide enough to hold all four."
+    },
+    {
+      "id": "s55",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Dew filling the frame, camera right down at soil level",
+      "characters": ["dew"],
+      "prompt": "<<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> fills the frame at soil level in the Flowerbed, turned three-quarter toward camera. One eye-stalk is at the very START of rising — beginning to stretch upward and slightly higher than the other — while the rest of him stays perfectly still and serene. His eyes are bright with quiet enormous delight and his small smile has curled up just a little more than usual: for him this is a huge celebration. Behind him, warm and defocused, the soil patch, the polished pebble and dewy candy-colored garden flowers. Sun high overhead: bright clear midday sunshine, short soft shadows, iridescent highlights across his pearly shell, a couple of celebratory golden sparkles drifting past. Camera right down at soil level, close and comic in its stillness."
+    },
+    {
+      "id": "s56",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Petunia centered and large, camera at soil level looking slightly up",
+      "characters": ["petunia"],
+      "prompt": "<<<dd220299-0254-4811-8942-6092d68e1ea2>>> is centered and large in frame on her little stem in the soil at the Flowerbed, tipping her head curiously to one side and leaning slightly toward camera, eyes wide and innocently blinking, brows lifted in an open question, mouth just beginning to open to ask something small and sleepy. Her whole body sways gently with the question. The tiny twig marker and polished pebble sit softly out of focus behind her, with dewy candy-colored flowers beyond. Sun high overhead: bright clear midday sunshine, short soft shadows, a scatter of gentle golden sparkles. Camera at soil level looking slightly up at her, close, so her face is large and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s57",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Sprout from the chest up, three-quarter to camera, face large, camera low at soil level",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> crouches down beside the new little flower at the Flowerbed, one hand thrown out wide in a big expressive storytelling gesture and the other about to gesture too, leaning eagerly toward the person he is talking to. His eyes are huge and warm and proud, eyebrows high, an enormous friendly grin with his mouth just beginning to open to explain something important. Head three-quarter toward camera so his mouth is fully visible; his face is large in frame. IMPORTANT: he has EXACTLY ONE leaf on his head — one single curly green leaf, one leaf only, never a pair. Behind him, softly defocused, the soil patch, the polished pebble and dewy candy-colored garden flowers. Sun high overhead: bright clear midday sunshine, short soft shadows, floating golden sparkles. Camera low at soil level, close, so his mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s58",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Poppy chest-up and dominant at the right, Petunia small and soft in the lower left foreground, camera low at soil level",
+      "characters": ["poppy", "petunia"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> kneels down at the Flowerbed and leans in warmly toward the new little flower, one hand just beginning to reach out in a gentle welcoming offer, the other resting on her knee. Her face fills the right of the frame in three-quarter view: eyes shining and soft, head tipped affectionately, a radiant welcoming smile with her mouth just beginning to open to speak. In the lower left foreground, small and slightly out of focus, <<<dd220299-0254-4811-8942-6092d68e1ea2>>> looks up at her, blinking happily. Behind them the rolling candy-colored flower-hills under a big blue sky. Sun high overhead: bright clear midday sunshine, short soft shadows, warm golden sparkles drifting. Camera low at soil level, close enough that Poppy's mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s59",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM — the Wish-Bloom bud centered and dominant on its mound, matching the established Wish-Bloom composition, no characters, camera low looking slightly up at it",
+      "characters": [],
+      "prompt": "The Wish-Bloom at the heart of Sunnydew Garden with absolutely no characters present: the giant pale pink-and-cream closed flower bud, smooth and glossy with thick clean dark outlines, sitting centered on its rounded green mound above the rolling pastel flower-hills, matching its established look. The bud itself remains CLOSED and unopened. At its base, one single brand-new tiny green leaf is at the very START of unfurling from the stem — a small curled leaf just beginning to peel outward and open, the first it has ever grown, only one new leaf. The whole bud gives a happy little shiver. Golden sparkles and glowing motes drift upward around it. Sun high overhead: bright clear midday sunshine, short soft shadows, luminous pastel rainbow hills behind, dewy grass and tiny flowers on the mound. Camera low, looking slightly up at the bud so it feels grand and magical."
+    },
+    {
+      "id": "s60",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "CLOSE — Sprout's head and shoulders filling the frame, both leaves fully inside frame at the top, camera at his eye height",
+      "characters": ["sprout"],
+      "prompt": "<<<a7beb072-a01f-4593-b579-ed9ce1331a61>>> stands in the sunny garden with both hands lifting toward the top of his own head, going comically cross-eyed as he strains to look up at something he can feel growing there. His mouth is just beginning to open into a delighted gasp, cheeks rosy with joy. CRITICAL CONTINUITY OVERRIDE FOR THIS SHOT: he now has TWO leaves on his head, not one — his original single curly green leaf, plus a brand-new second curly green leaf that has just sprouted right beside it, slightly smaller, paler and still uncurling. TWO leaves total, clearly countable, both fully inside the frame. Tiny golden sparkles pop around the new leaf. Behind him, softly defocused, the sunny candy-colored flower-hills under a blue sky. Sun high overhead: bright clear midday sunshine, short soft shadows. Camera at his eye height, close, so his face is large and mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s61",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "WIDE beauty shot — the Wish-Bloom mound at the heart of the garden, no characters, camera low and slowly rising",
+      "characters": [],
+      "prompt": "A wide golden beauty shot of the heart of Sunnydew Garden with absolutely no characters present: the giant Wish-Bloom bud stands on its rounded green mound in the middle distance, still a CLOSED bud, now with one single new little green leaf unfurled at its base. Around and beyond it roll the candy-colored flower-hills in pink, yellow, lilac and blue, a winding pale petal-path, dewdrops glittering everywhere, under a big bright blue sky with soft fluffy white clouds. Clouds of golden sparkles and glowing pollen motes drift slowly upward through the whole frame, warm and magical and complete. Sun high overhead: bright clear midday sunshine, short soft shadows, luminous and joyful. Camera low and wide, slowly rising, the horizon low so the sky fills the upper third."
+    },
+    {
+      "id": "s62",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Poppy from the chest up in the lower two-thirds, tipped back to look up; a wide band of open sky above her with the tiny cloud very small and distant, camera low looking up past her",
+      "characters": ["poppy", "drizzle"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> stands in the sunny garden with her head tipped right back to look up at the sky, one hand lifting toward her own nose where a single fat clear raindrop has just landed and is beading there. Her expression is puzzled and gently concerned, not frightened — brows drawn up in curious sympathy, eyes wide, mouth just beginning to open to speak. She occupies the lower two thirds of frame with her face large and clear. Above her, in a wide band of bright blue sky with fluffy white clouds, <<<6bfefd15-2286-412c-b319-c28a20018cf5>>> drifts VERY small and distant and high — no more than a tiny fraction of the frame, far away and unmistakably lonely — trailing a small soft grey shadow that slides across the candy-colored flower-hills below. Sun high overhead: bright clear midday sunshine everywhere except that one small travelling shadow. Camera low, looking up past her into the sky, close enough that her mouth movement reads clearly for lip sync."
+    },
+    {
+      "id": "s63",
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "framing": "MEDIUM CLOSE — Poppy centered, facing camera fully with direct eye contact, Petunia and Dew small at the lower frame edges, clean uncluttered space kept along the lower third and the sky for a title card to be added later, camera at her eye height",
+      "characters": ["poppy", "petunia", "dew"],
+      "prompt": "<<<411d6b9c-e8d3-49e5-a5e8-33fd0274c627>>> stands in the sunny garden facing the viewer directly, centered, looking straight into the lens with bright warm eye contact, one hand just beginning to lift into a big friendly goodbye wave, the other gesturing invitingly. Her face is large and clearly readable, mouth just beginning to open to speak to us. Small and soft at the lower left frame edge, <<<dd220299-0254-4811-8942-6092d68e1ea2>>> starts to sway her whole little body in a wave; small and soft at the lower right, <<<332bfcac-d204-4b28-9f81-a8e98c0b24cc>>> has one eye-stalk beginning the slowest possible wave. Far away and very small in the bright blue sky at the top of frame, a tiny grey cloud is drifting off over the distant garden wall. Sun high overhead: bright clear midday sunshine, short soft shadows, rolling candy-colored flower-hills behind, golden sparkles in the air. Keep the lower third and the upper sky simple, clean and uncluttered as empty space for a title card to be composited later — but render absolutely no text, letters or symbols in the image itself. Camera at her eye height, close and frontal, so her mouth movement reads perfectly for lip sync."
+    }
+  ]
+}

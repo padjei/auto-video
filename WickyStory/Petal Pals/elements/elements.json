@@ -1,0 +1,52 @@
+{
+  "_comment": "Locked character Elements for Petal Pals. Embed the id in a generation prompt as <<<id>>> and the backend injects that character's locked reference — this is what keeps the cast identical across every shot and every episode. Never describe a character's design in a shot prompt; reference the Element instead, or the two descriptions will fight and the character will drift.",
+  "approvedAt": "2026-08-09",
+  "style": "bright glossy 3D cartoon, soft rounded shapes, thick clean dark outlines, big expressive eyes, appealing exaggerated toddler-show proportions, soft global illumination, wholesome and cozy, saturated candy colors",
+  "characters": {
+    "poppy": {
+      "id": "411d6b9c-e8d3-49e5-a5e8-33fd0274c627",
+      "name": "pp-poppy",
+      "design": "elements/designs/poppy.png",
+      "note": "Reads as a human toddler in a ladybug costume rather than an insect. Approved deliberately 2026-08-09."
+    },
+    "sunny": {
+      "id": "640cc3ce-87df-4a58-86fb-9872c1ef377a",
+      "name": "pp-sunny",
+      "design": "elements/designs/sunny.png"
+    },
+    "sprout": {
+      "id": "a7beb072-a01f-4593-b579-ed9ce1331a61",
+      "name": "pp-sprout-1leaf",
+      "design": "elements/designs/sprout.png",
+      "note": "EXACTLY ONE leaf — this is the Ep1 state. The model strongly prefers giving him a leaf pair, so every generation must be checked. A new Element is needed per episode as the count grows: 1 (Ep1) → 2 (Ep2) → 3 → 4 → 5 (finale)."
+    },
+    "dew": {
+      "id": "332bfcac-d204-4b28-9f81-a8e98c0b24cc",
+      "name": "pp-dew",
+      "design": "elements/designs/dew.png"
+    },
+    "drizzle": {
+      "id": "6bfefd15-2286-412c-b319-c28a20018cf5",
+      "name": "pp-drizzle",
+      "design": "elements/designs/drizzle.png",
+      "note": "Ep1 uses him only distant and small. Full reveal is Ep2. He brightens across the season, so later episodes will need their own Elements."
+    },
+    "petunia": {
+      "id": "dd220299-0254-4811-8942-6092d68e1ea2",
+      "name": "pp-petunia",
+      "design": "elements/designs/petunia.png"
+    }
+  },
+  "supersededElements": {
+    "_comment": "Pre-existing Petal Pals Elements found in the workspace, created ~2026-08-03. They are PHOTOREALISTIC and do not match the bible's cartoon style; the snail and seedling in particular read as uncanny for a 2-6 audience. Left in place, not deleted, but not used. Do not mix these with the pp-* set.",
+    "Poppy-ladybug": "b4868283-62c0-4303-99c5-dfec6b47539a",
+    "Sunny-bee": "827c202e-7ce7-43c0-9005-c3a2795e332c",
+    "Sprout-seedling": "ab001b87-8f18-4316-9ec8-aa973ffbc130",
+    "Dew-snail": "3450c5e8-9dc9-4b83-8c71-582edc6e4874",
+    "Petunia-flower": "67142dc3-de2d-414e-b112-72c032a48a72"
+  },
+  "siblingShow": {
+    "_comment": "Nightlight Squad Elements also exist in this workspace — the sister show named in the bible. Untouched.",
+    "characters": ["Wisp-ghost", "Grumbletum-monster", "Pip-kitten", "Boomer-puppy", "Nova-firefly", "Pim-the-Penguin"]
+  }
+}
